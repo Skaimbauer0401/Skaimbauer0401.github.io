@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Bauer - Persönliche Daten</title>
+    <!-- Google Fonts Einbindung -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 200px; /* Bildgröße */
+            height: 200px; /* Bildgröße */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #0056b3; /* Kräftigeres Blau */
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-left: 4px solid #0056b3;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .section ul li ul {
+            padding-left: 20px; /* Abstand zu Seitenrand */
+        }
+        .section ul li:hover {
+            background-color: #eef6ff;
+        }
+        .section ul li ul li:hover {
+            background-color: #dfefff; /* Hellere Hover-Farbe für unterste Unterbereiche */
+        }
+        a {
+            color: #0056b3; /* Anpassung der Linkfarbe */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="samuel.jpg" alt="Bild von Samuel Bauer">
+            <h1>Samuel Bauer</h1>
+        </div>
+
+        <div class="section">
+            <h2>Persönliche Daten</h2>
+            <ul>
+                <li><strong>Geburtsdatum:</strong> 04.01.2008</li>
+                <li><strong>Geburtsort:</strong> 
+                    <a href="https://www.google.com/maps/place/Schärding,+Österreich" target="_blank">Schärding</a>
+                </li>
+                <li><strong>Wohnort:</strong> 
+                    <a href="https://www.google.com/maps/place/Unterer+Richtstattweg+7A,+4780+Schärding,+Österreich" target="_blank">Unterer Richtstattweg 7A, 4780 Schärding, Österreich</a>
+                </li>
+                <li><strong>Telefonnummer:</strong> +4367761011083 (Bitte nicht anrufen ich habe Schule)</li>
+                <li><strong>E-Mail:</strong> <a href="mailto:samuel.bauer@aon.at">samuel.bauer@aon.at</a></li>
+		<li><strong>LinkedIn:</strong> 
+                    <a href="https://www.linkedin.com/in/samuel-bauer-7a59a0316" target="_blank">Samuel Bauer LinkedIn</a>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ausbildung</h2>
+            <ul>
+                <li>2014-2018: Volksschule Brunnenthal</li>
+                <li>2018-2022: Neue Musikmittelschule Schärding</li>
+                <li>2022-Ifd.: <a href="https://www.htl-grieskirchen.at/wp/" target="_blank">HTBLA Grieskirchen Medizin-Informatik</a></li>
+                <li>Sommer 2023-Ifd.: geringfügige Anstellung Eurospar Schärding (Samstagsjob)</li>
+                <li><a href="https://www.talente-ooe.at/" target="_blank">Mitglied Stiftung Talente OÖ</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Kenntnisse</h2>
+            <ul>
+                <li><strong>Programmierung:</strong>
+                    <ul>
+                        <li>Objektorientierte Programmierung in Java</li>
+                        <li>Anwendung von Datenströmen in Java</li>
+                        <li>JavaFX</li>
+                        <li>Datenstrukturen und Algorithmen</li>
+                        <li>Basics HTML</li>
+                    </ul>
+                </li>
+                <li><strong>Networking:</strong>
+                    <ul>
+                        <li>Cisco Networking Academy: Introduction to Networks (<a href="https://www.credly.com/badges/4ca6167b-3683-476c-a6e3-bad37ed67621/public_url">Zertifikat ansehen</a>)</li>
+                        <li>Cisco Switchkonfiguration/Routerkonfiguration</li>
+                        <li>Aufbau kleiner Netzwerke</li>
+                    </ul>
+                </li>
+                <li><strong>Elektrotechnik:</strong>
+                    <ul>
+                        <li>Basics Wechselspannungstechnik & Basics bei der Benützung eines Oszilloskops</li>
+                        <li>Basics Halbleitertechnologie</li>
+                        <li>Erweiterte Kenntnisse sequentielle Logik (8bit Rechner im Simulationsprogramm entworfen und simuliert)</li>
+                        <li>Zusammenbau eines Desktop PCs & Aufsetzen eines Betriebssystems (Windows, Linux)</li>
+                        <li>Verwendung eines RaspberryPi über SSH und VNC</li>
+                    </ul>
+                </li>
+                <li><strong>Medizinisch:</strong>
+                    <ul>
+                        <li>Grundlagen Aufbau Körper (Organe, Blut/Immunsystem, Atmungs-und Ausscheidungssystem)</li>
+                        <li>Wissen über bildgebende Verfahren (Thermographie, Sonographie)</li>
+                        <li>Wissen über diagnostische Geräte (EKG, Audiometrie, HLM)</li>
+                        <li>Wissen über Elektrochirurgie</li>
+                        <li>Grundlagen Medizinproduktegesetz und Patientensicherheit</li>
+                        <li>Grundwissen Werkstoffwissenschaften (medizinischer Anwendung)</li>
+                    </ul>
+                </li>
+                <li><strong>Generell:</strong>
+                    <ul>
+                        <li>Microsoft PowerPoint</li>
+                        <li>Microsoft Excel</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Access</li>
+                        <li>Basic 3D-Modelling in Blender</li>
+                        <li>Basic Physik-Simulationen in Blender (Flüssigkeiten, Rauch, Objektinteraktionen)</li>
+                    </ul>
+                </li>
+                <li>Sehr gutes mathematisches Verständnis</li>
+                <li>Sehr schnelle Auffassungsgabe und logisches Denkvermögen</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Interessen</h2>
+            <ul>
+                <li>Programmieren</li>
+                <li>Alles mögliche mit AI <a href="https://github.com/Unity-Technologies/ml-agents" target="_blank">(Unity MLAgents)</a> ausprobieren</li>
+                <li>PC-Assembling</li>
+                <li>Skifahren</li>
+                <li>Radfahren</li>
+                <li>Stundenlang am PC sitzen</li>
+		<li>Lesen</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
