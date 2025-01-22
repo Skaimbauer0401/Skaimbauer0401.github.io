@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+//Dark Mode
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2c2c2c;
+        color: #ffffff;
+    }
+    section {
+	background-color: #2c2c2c;
+    }
+}
+
+//White Mode
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f4f4f4;
+        color: #000000;
+    }
+    section {
+	background-color: #f4f4f4;
+    }
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    text-align: center;
+}
+
+
+.portrait{
+	width: auto;
+	max-height: 400px;
+	border-radius: 50%;
+	padding: 0.75rem;
+}
+
+
+h1 {
+    font-size: 6rem;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50vh;
+    gap: 1.5rem;
+    padding: 1.3rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.4s, box-shadow 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: none;
+}
+
+.button:nth-child(1) {
+    background-color: #d66a6a;
+    box-shadow: 0 0 10px #d66a6a;
+}
+
+.button:nth-child(2) {
+    background-color: #6a99d6;
+    box-shadow: 0 0 10px #6a99d6;
+}
+
+.button:nth-child(3) {
+    background-color: #6ad66a;
+    box-shadow: 0 0 10px #6ad66a;
+}
+
+.button:nth-child(4) {
+    background-color: #d66ad6;
+    box-shadow: 0 0 10px #d66ad6;
+}
+
+.button:nth-child(1):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #d66a6a;
+}
+
+.button:nth-child(2):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #6a99d6;
+}
+
+.button:nth-child(3):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #6ad66a;
+}
+
+.button:nth-child(4):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #d66ad6;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem;
+}
+
+section {
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#section1 { background-color: #2c2c2c; }
+#section2 { background-color: #2c2c2c; }
+#section3 { background-color: #2c2c2c; }
+#section4 { background-color: #2c2c2c; }
