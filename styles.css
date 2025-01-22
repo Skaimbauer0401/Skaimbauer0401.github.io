@@ -47,6 +47,10 @@ h1 {
     border-radius: 15px;
     padding: 1rem;
     box-shadow: none;
+    .button-image{
+	max-width: 150px;
+	padding: 5px;
+    }
 }
 
 .button:nth-child(1) {
@@ -104,7 +108,15 @@ section {
     background-color: #2c2c2c;
 }
 
-#section1 { background-color: #2c2c2c; }
-#section2 { background-color: #2c2c2c; }
-#section3 { background-color: #2c2c2c; }
-#section4 { background-color: #2c2c2c; }
+#section1 {
+ background-color: #2c2c2c; 
+}
+#section2 {
+ background-color: #2c2c2c; 
+}
+#section3 {
+ background-color: #2c2c2c; 
+}
+#section4 {
+ background-color: #2c2c2c; 
+}
