@@ -20,7 +20,7 @@ body {
         max-height: 35vh;
         min-height: 200px;
         border-radius: 50%;
-        margin-left: 20px;
+        margin-left:  20px;
         margin-right: 40px;
         filter: drop-shadow(0 0 3vw #ebedee);
         transition: transform 0.4s, box-shadow 0.4s;
