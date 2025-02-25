@@ -41,7 +41,7 @@ body {
     .button {
         display: flex;
         justify-content: center;
-        width: 42vw;
+        width: 45vw;
         height: 21vh;
         align-items: center;
         font-size: clamp(20px,3vw,3vw);
