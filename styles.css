@@ -14,6 +14,7 @@ body {
     align-items: center;
     justify-content:center;
     font-size: clamp(20px,3vw,3vw);
+    margin: 10px;
 
     .portrait{
 	    max-width: 25vw;
@@ -53,8 +54,8 @@ body {
     padding: 1vw;
 
     .button-image{
-    max-width: clamp(20px,12vw,12vw);
-    max-height: clamp(20px,22vh,22vh);
+    max-width: 12vw;
+    max-height: 22vh;
     }
 }
 
