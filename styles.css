@@ -32,7 +32,7 @@ body {
 
 
 .button-container {
-    background-color: #ff0000;
+    background-color: #2c2c2c;
     height: 55vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -43,15 +43,15 @@ body {
 .button {
     display: flex;
     justify-content: center;
-    width: 40vw;
-    height: 18vh;
+    width: 45vw;
+    height: 23vh;
     align-items: center;
     font-size: clamp(20px,3vw,3vw);
     color: #ffffff;
     text-decoration: none;
     transition: transform 0.4s, box-shadow 0.4s;
     border-radius: 2vw;
-    padding: 1vw;
+    
 
     .button-image{
     max-width: 12vw;
@@ -62,47 +62,46 @@ body {
 
 .button:nth-child(1) {
     background-color: #d66a6a;
-    box-shadow: 0 0 10px #d66a6a;
+    box-shadow: 0 0 1vw #d66a6a;
 }
 .button:nth-child(1):hover {
-    	transform: scale(1.05);
-   	 box-shadow: 0 0 30px #d66a6a;
+    transform: scale(1.05);
+   	box-shadow: 0 0 3vw #d66a6a;
 }
 
 
 .button:nth-child(2) {
     background-color: #6a99d6;
-    box-shadow: 0 0 10px #6a99d6;
+    box-shadow: 0 0 1vw #6a99d6;
 }
-.button:nth-child(2):hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px #6a99d6;
-}
+    .button:nth-child(2):hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 3vw #6a99d6;
+    }
 
 
 .button:nth-child(3) {
     background-color: #6ad66a;
-    box-shadow: 0 0 10px #6ad66a;
+    box-shadow: 0 0 1vw #6ad66a;
 }
-.button:nth-child(3):hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px #6ad66a;
-}
+    .button:nth-child(3):hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 3vw #6ad66a;
+    }
 
 
 .button:nth-child(4) {
     background-color: #d66ad6;
-    box-shadow: 0 0 10px #d66ad6;
+    box-shadow: 0 0 1vw #d66ad6;
 }
-.button:nth-child(4):hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px #d66ad6;
-}
+    .button:nth-child(4):hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 3vw #d66ad6;
+    }
 
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 0rem;
 }
 
 section {
