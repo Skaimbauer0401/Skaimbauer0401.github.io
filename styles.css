@@ -20,7 +20,7 @@ body {
         min-width: 250px;
 	    max-height: 40vh;
         min-height: 250px;
-        padding: 15px;
+        margin: 15px;
         border-radius: 50%;
     }
 
@@ -45,7 +45,7 @@ body {
     width: 40vw;
     height: 18vh;
     align-items: center;
-    font-size: clamp(1px,3vw,3vw);
+    font-size: clamp(20px,3vw,3vw);
     color: #ffffff;
     text-decoration: none;
     transition: transform 0.4s, box-shadow 0.4s;
