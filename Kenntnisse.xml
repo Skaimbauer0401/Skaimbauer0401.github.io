@@ -1,0 +1,16 @@
+<Kenntnisse>
+    <Programmierung>
+        <Java seit="2022">OOP, Sockets/Server-Client-Konzepte, Multithreading, Datenströme, JavaFX</Java>
+        <Oracle_SQL seit="2022">DQL, DDL, DML, DB-Modellierung/Normalisierung</Oracle_SQL>
+        <Csharp seit="2024">Basics, Schnittstelle zu Arduino</Csharp>
+        <HTML_CSS seit="2024">Basics</HTML_CSS>
+    </Programmierung>
+    <Networking>
+        <Cisco Zertifikat="https://www.credly.com/badges/4ca6167b-3683-476c-a6e3-bad37ed67621/public_url">Cisco Networking Academy: Introduction to Networks</Cisco>
+    </Networking>
+    <Allgemein>
+        <MS_Programme Kenntnis_Grad="Fortgeschritten">PowerPoint, Word, Excel, Access</MS_Programme>
+        <Blender Kenntnis_Grad="Grundkenntnisse">Modellierung, Rendering, Simulation</Blender>
+        <Weiteres>Autoführerschein, PC-Assembling, C-Arduino, Generelles Know-How am PC</Weiteres>
+    </Allgemein>
+</Kenntnisse>
