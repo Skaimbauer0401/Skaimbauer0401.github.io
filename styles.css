@@ -107,6 +107,7 @@ html {
 section {
     height: 100vh;
     background-color: #2c2c2c;
+    padding: 10px;
 }
     .toTop {
         text-decoration: none;
@@ -146,48 +147,44 @@ section {
         bottom: 0;
         left: 50%;
         width: 10px;
-        background-color: #d66ad6;
+        background-color: #d66a6a;
         transform: translateX(-50%);
+        clip-path: inset(0 round 30px);
     }
     .timeline-item {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
         position: relative;
         background: #706c6c;
         height:  fit-content;
         max-width: 30vw;
         border-radius: 8px;
         padding: 5px;
+        transition: transform 0.2s ease;
     }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            width: calc(15%);            
-            height: 7px; 
-            background: #d66ad6;
-        }
+    .timeline-item:hover{
+        transform: scale(1.07);
+    }
+
     .timeline-item:nth-child(odd){
-        border-right:  3px solid #d66ad6;
+        border-right:  5px solid #d66a6a;
         text-align: right;
         left:5%;
     }
-        .timeline-item:nth-child(odd)::before {
-            left: 100%; 
-        }
     .timeline-item:nth-child(even){
-        border-left: 3px solid #d66ad6;
+        border-left: 5px solid #d66a6a;
         text-align: left;
         left:55%;
     }
-        .timeline-item:nth-child(even)::before {
-            right: 100%; 
-        }
-    
-    
-    
-    
 
 #section2 {
  background-color: #2c2c2c; 
 }
+    
+
+
 #section3 {
  background-color: #2c2c2c; 
 }
