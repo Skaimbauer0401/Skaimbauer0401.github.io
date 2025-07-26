@@ -148,7 +148,7 @@ import Layout from '../layouts/Layout.astro';
 
   p {
     margin-bottom: 1.5rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--light-text);
     font-size: 1.05rem;
     line-height: 1.7;
   }
@@ -162,7 +162,7 @@ import Layout from '../layouts/Layout.astro';
     margin-bottom: 1rem;
     display: flex;
     align-items: flex-start;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--light-text);
   }
 
   .feature-icon {
@@ -178,11 +178,12 @@ import Layout from '../layouts/Layout.astro';
   ul {
     margin-bottom: 2rem;
     margin-left: 1.5rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--light-text);
   }
 
   li {
     margin-bottom: 0.8rem;
+    color: var(--light-text);
   }
 
   .info-card {
@@ -192,6 +193,7 @@ import Layout from '../layouts/Layout.astro';
     overflow: hidden;
     box-shadow: var(--box-shadow);
     position: relative;
+    color: var(--light-text);
   }
 
   .info-card::before {
