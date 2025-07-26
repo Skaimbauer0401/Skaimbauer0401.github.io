@@ -1,0 +1,223 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Begleitende Qualitätskontrolle - Baumeister Andreas Bauer" description="Professionelle Qualitätskontrolle für Bauvorhaben">
+  <div class="page-header">
+    <div class="container">
+      <h1>Begleitende Qualitätskontrolle</h1>
+    </div>
+    <div class="header-overlay"></div>
+  </div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="content-wrapper">
+        <h2>Qualitätssicherung für Ihr Bauvorhaben</h2>
+        <p>Die begleitende Qualitätskontrolle ist ein wesentlicher Faktor für den erfolgreichen Abschluss eines Bauvorhabens. Als unabhängiger Sachverständiger biete ich Ihnen eine objektive und fachkundige Überprüfung während der gesamten Bauphase.</p>
+
+        <div class="benefits">
+          <h3>Ihre Vorteile</h3>
+          <ul>
+            <li>Frühzeitiges Erkennen und Vermeiden von Baufehlern</li>
+            <li>Sicherstellung der vertraglich vereinbarten Qualität</li>
+            <li>Dokumentation des Baufortschritts</li>
+            <li>Reduzierung von Baukosten durch vermiedene Mängel</li>
+            <li>Vermeidung von Verzögerungen im Bauablauf</li>
+            <li>Erhöhung der Rechtssicherheit</li>
+          </ul>
+        </div>
+
+        <h2>Meine Leistungen</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <h3>Planungsphase</h3>
+            <ul>
+              <li>Überprüfung der Planungsunterlagen</li>
+              <li>Prüfung auf Übereinstimmung mit Normen und Regelwerken</li>
+              <li>Identifikation potenzieller Schwachstellen</li>
+            </ul>
+          </div>
+
+          <div class="service-item">
+            <h3>Bauphase</h3>
+            <ul>
+              <li>Regelmäßige Baustellenbegehungen</li>
+              <li>Kontrolle der verwendeten Materialien</li>
+              <li>Überprüfung der fachgerechten Ausführung</li>
+              <li>Fotodokumentation</li>
+            </ul>
+          </div>
+
+          <div class="service-item">
+            <h3>Abnahmephase</h3>
+            <ul>
+              <li>Unterstützung bei der Abnahme</li>
+              <li>Erstellung von Mängelprotokollen</li>
+              <li>Kontrolle der Mängelbehebung</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <h3>Zielgruppen</h3>
+          <p>Meine Dienstleistungen richten sich an:</p>
+          <ul>
+            <li>Bauherren und Investoren</li>
+            <li>Architekten und Planer</li>
+            <li>Bauunternehmen und Handwerksbetriebe</li>
+            <li>Hausverwaltungen und Immobilienbetreiber</li>
+          </ul>
+        </div>
+
+        <p>Möchten Sie mehr über meine Leistungen im Bereich der Qualitätskontrolle erfahren? Kontaktieren Sie mich für ein unverbindliches Beratungsgespräch.</p>
+        <a href="/kontakt" class="btn">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    position: relative;
+    color: var(--light-text);
+    padding: 7rem 0 3rem;
+    text-align: center;
+    background-image: url('../assets/Qualitaetskontrolle_kl.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -1rem;
+  }
+
+  .page-header h1 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    z-index: 1;
+    color: var(--light-text);
+  }
+
+  .header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.8));
+    z-index: 0;
+  }
+
+  .content-section {
+    padding: 3.5rem 0;
+    position: relative;
+  }
+
+  .content-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-gradient);
+    z-index: -1;
+  }
+
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+  }
+
+  h2:first-child {
+    margin-top: 0;
+  }
+
+  h3 {
+    color: var(--light-text);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  ul {
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    color: var(--text-color);
+  }
+
+  li {
+    margin-bottom: 0.8rem;
+  }
+
+  .benefits {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 2.5rem 0;
+    box-shadow: var(--box-shadow);
+    border-top: 2px solid;
+    border-image: var(--accent-gradient) 1;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
+    padding: 0 1rem;
+  }
+
+  .service-item {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border-left: 2px solid;
+    border-image: var(--accent-gradient) 1;
+  }
+
+  .info-box {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 2.5rem 0;
+    box-shadow: var(--box-shadow);
+    border-bottom: 2px solid;
+    border-image: var(--accent-gradient) 1;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: var(--accent-gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(155, 48, 255, 0.3);
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(155, 48, 255, 0.4);
+  }
+
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

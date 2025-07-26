@@ -1,0 +1,145 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Gutachten - Baumeister Andreas Bauer" description="Gerichtlich beeideter Sachverständiger für Bauschäden, Bauphysik und mehr">
+  <div class="page-header">
+    <div class="container">
+      <h1>Gutachten</h1>
+    </div>
+  </div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="content-wrapper">
+        <h2>Gerichtlich beeideter Sachverständiger</h2>
+        <p>Als allgemein beeideter und gerichtlich zertifizierter Sachverständiger erstelle ich fundierte Gutachten in folgenden Bereichen:</p>
+
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <h3>Bauschäden</h3>
+            <p>Umfassende Analyse und Dokumentation von Bauschäden jeglicher Art</p>
+          </div>
+
+          <div class="expertise-card">
+            <h3>Bauphysik</h3>
+            <p>Untersuchungen zu Wärmeschutz, Feuchteschutz, Schallschutz und mehr</p>
+          </div>
+
+          <div class="expertise-card">
+            <h3>WDVS</h3>
+            <p>Spezialisierung auf Wärmedämm-Verbundsysteme und deren Problematiken</p>
+          </div>
+
+          <div class="expertise-card">
+            <h3>Bauwerkstrockenlegung</h3>
+            <p>Analyse und Lösungsvorschläge bei Feuchtigkeitsproblemen</p>
+          </div>
+        </div>
+
+        <h2>Meine Leistungen</h2>
+        <ul>
+          <li>Erstellung von gerichtsfähigen Gutachten</li>
+          <li>Privatgutachten für Bauherren, Planer und Ausführende</li>
+          <li>Schadensanalysen und Sanierungskonzepte</li>
+          <li>Beratung bei rechtlichen Auseinandersetzungen</li>
+          <li>Beweissicherung und Dokumentation</li>
+        </ul>
+
+        <div class="info-box">
+          <h3>Vorgehensweise</h3>
+          <p>Meine Gutachten basieren auf einer gründlichen Vor-Ort-Begehung, umfassender Dokumentation und detaillierter Analyse. Jedes Gutachten wird mit höchster Sorgfalt und unter Berücksichtigung aller relevanten Faktoren erstellt.</p>
+        </div>
+
+        <p>Benötigen Sie ein Gutachten oder haben Sie Fragen zu meinen Leistungen? Kontaktieren Sie mich für ein unverbindliches Erstgespräch.</p>
+        <a href="/kontakt" class="btn">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .content-section {
+    padding: 3rem 0;
+  }
+
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  h2:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .expertise-card {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 5px;
+  }
+
+  .expertise-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+  }
+
+  .info-box {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 2rem 0;
+  }
+
+  .info-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
+  }
+
+  .btn:hover {
+    background-color: #00244d;
+  }
+</style>
