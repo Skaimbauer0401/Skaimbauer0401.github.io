@@ -11,6 +11,7 @@
         </div>
     </div>
     <div class="hero-overlay"></div>
+    <div class="hero-fade"></div>
 </div>
 
 <section class="services">
@@ -102,8 +103,20 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(41, 19, 39, 0.7), rgba(20, 80, 40, 0.8));
+        background: linear-gradient(to right, rgba(18, 18, 18, 0.92), rgba(18, 18, 18, 0.6), rgba(18, 18, 18, 0.85));
         z-index: 0;
+    }
+
+    /* Smooth fade from hero into page background */
+    .hero-fade {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 80px;
+        background: linear-gradient(to bottom, rgba(20, 22, 24, 0), var(--primary-color));
+        z-index: 0;
+        pointer-events: none;
     }
 
     .hero-content {
@@ -248,13 +261,28 @@
         overflow: hidden;
     }
 
+    /* sanfter Übergang vom umgebenden Seitenhintergrund in den About-Bereich */
+    .about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background: linear-gradient(to bottom, var(--primary-color), rgba(20,22,24,0));
+        z-index: 0;
+        pointer-events: none;
+    }
+
     .about-bg {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, rgba(232, 62, 140, 0.05), rgba(40, 180, 120, 0.1), rgba(155, 48, 255, 0.05));
+        /* dezenter, neutraler Hintergrund statt bunter Fläche */
+        background: radial-gradient(1200px 500px at 80% -200px, rgba(96, 112, 134, 0.06), transparent 60%),
+                    radial-gradient(800px 400px at 10% 120%, rgba(96, 112, 134, 0.04), transparent 60%);
         z-index: -1;
     }
 
@@ -266,6 +294,8 @@
         padding: 0 2rem;
         max-width: 1200px;
         margin: 0 auto;
+        position: relative;
+        z-index: 1;
     }
 
     .about-text {
@@ -294,6 +324,30 @@
     .contact-section {
         padding: 6rem 0;
         position: relative;
+    }
+
+    /* Sanfter Übergang an den Kanten des Kontakt-Bereichs */
+    .contact-section::before,
+    .contact-section::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    /* Top-Fade: von Seitenhintergrund in den Kontaktbereich */
+    .contact-section::before {
+        top: 0;
+        background: linear-gradient(to bottom, var(--primary-color), rgba(20,22,24,0));
+    }
+
+    /* Bottom-Fade: aus dem Kontaktbereich wieder in den Seitenhintergrund */
+    .contact-section::after {
+        bottom: 0;
+        background: linear-gradient(to top, var(--primary-color), rgba(20,22,24,0));
     }
 
     .contact-card {
