@@ -1,0 +1,191 @@
+---
+---
+<div class="page-header">
+  <div class="container">
+    <h1>Kontakt</h1>
+  </div>
+</div>
+
+<section class="content-section">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Kontaktinformationen</h2>
+        <div class="info-item">
+          <h3>Adresse</h3>
+          <p>Baumeister Andreas Bauer</p>
+          <p>Unterer Richtstattweg 7A</p>
+          <p>4780 Schärding</p>
+          <p>Österreich</p>
+        </div>
+
+        <div class="info-item">
+          <h3>Telefon</h3>
+          <p>Handy: +43/699/142 450 60</p>
+        </div>
+
+        <div class="info-item">
+          <h3>E-Mail</h3>
+          <p>info@baumeister-bauer.at</p>
+        </div>
+
+        <div class="info-item">
+          <h3>Öffnungszeiten</h3>
+          <p>Montag - Freitag: 8:00 - 17:00 Uhr</p>
+          <p>Termine auch nach Vereinbarung möglich</p>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <h2>Kontaktformular</h2>
+        <p>Füllen Sie das Formular aus, und ich werde mich umgehend bei Ihnen melden.</p>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Betreff *</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="checkbox-label">
+              <input type="checkbox" name="privacy" required>
+              <span>Ich stimme zu, dass meine Angaben zur Kontaktaufnahme verwendet werden. Die Datenschutzerklärung habe ich gelesen und akzeptiert.</span>
+            </label>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn">Nachricht senden</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .page-header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .content-section {
+    padding: 3rem 0;
+  }
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contact-info, .contact-form-container {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--light-text);
+  }
+
+  .contact-info h2, .contact-form-container h2 {
+    color: var(--light-text);
+    margin-bottom: 1rem;
+  }
+
+  .info-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .info-item h3 {
+    color: var(--light-text);
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.5rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group.full-width {
+    grid-column: 1 / -1;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  input, textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+    background: rgba(0,0,0,0.2);
+    color: var(--light-text);
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .checkbox-label input {
+    margin-top: 0.25rem;
+  }
+
+  .form-submit {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: var(--subtle-accent);
+  }
+
+  @media (max-width: 900px) {
+    .contact-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

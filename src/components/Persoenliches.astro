@@ -1,0 +1,190 @@
+---
+---
+<div class="page-header">
+  <div class="container">
+    <h1>Persönliches</h1>
+  </div>
+</div>
+
+<section class="content-section">
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="profile-section">
+        <div class="profile-info">
+          <h2>Baumeister Andreas Bauer</h2>
+          <p class="subtitle">Allgemein beeideter und gerichtlich zertifizierter Sachverständiger</p>
+
+          <div class="qualifications">
+            <h3>Qualifikationen</h3>
+            <ul>
+              <li>Gerichtlich zertifizierter Sachverständiger</li>
+              <li>Diplom-Baumeister</li>
+              <li>Zertifizierter Sachverständiger für Bauphysik</li>
+              <li>Spezialist für Wärmedämm-Verbundsysteme (WDVS)</li>
+              <li>Experte für Bauschäden und Baumängel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="career-section">
+        <h2>Beruflicher Werdegang</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2010 - heute</div>
+            <div class="timeline-content">
+              <h3>Selbstständiger Baumeister und Sachverständiger</h3>
+              <p>Erstellung von Gutachten, Durchführung von Schulungen und Beratungen im gesamten Bundesgebiet</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2005 - 2010</div>
+            <div class="timeline-content">
+              <h3>Technischer Leiter in einem Bauunternehmen</h3>
+              <p>Verantwortung für die technische Planung und Ausführung von Bauprojekten</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2000 - 2005</div>
+            <div class="timeline-content">
+              <h3>Projektleiter im Hochbau</h3>
+              <p>Leitung verschiedener Bauprojekte im Wohn- und Gewerbebau</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">1995 - 2000</div>
+            <div class="timeline-content">
+              <h3>Studium des Bauingenieurwesens</h3>
+              <p>Abschluss mit Auszeichnung</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expertise-section">
+        <h2>Fachliche Schwerpunkte</h2>
+        <div class="expertise-grid">
+          <div class="expertise-item">
+            <h3>Bauphysik</h3>
+            <p>Wärmeschutz, Feuchteschutz, Schallschutz, Brandschutz</p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Wärmedämm-Verbundsysteme</h3>
+            <p>Planung, Ausführung, Sanierung, Schadensanalyse</p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Bauschäden</h3>
+            <p>Ursachenermittlung, Sanierungskonzepte, Gutachten</p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Qualitätssicherung</h3>
+            <p>Baubegleitung, Abnahmen, Qualitätskontrollen</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <p>Haben Sie Fragen oder möchten Sie mehr über meine Qualifikationen erfahren?</p>
+        <a href="/kontakt" class="btn">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .page-header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .content-section {
+    padding: 3rem 0;
+  }
+
+  .content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    color: var(--light-text);
+    opacity: 0.9;
+  }
+
+  .qualifications ul {
+    margin-left: 1.5rem;
+    color: var(--light-text);
+  }
+
+  .timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent-gradient);
+    opacity: 0.6;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-date {
+    font-weight: bold;
+    color: var(--light-text);
+  }
+
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .expertise-item {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    border-left: 2px solid;
+    border-image: var(--accent-gradient) 1;
+  }
+
+  .contact-cta {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  @media (min-width: 992px) {
+    .content-wrapper {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>
