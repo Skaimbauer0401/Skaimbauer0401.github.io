@@ -6,7 +6,7 @@
             <h1>Baumeister Andreas Bauer</h1>
             <h2>Allgemein beeideter und gerichtlich zertifizierter Sachverständiger</h2>
             <div class="hero-cta">
-                <a href="/kontakt" class="btn btn-primary">Kontakt aufnehmen</a>
+                <a href="kontakt" class="btn btn-primary">Kontakt aufnehmen</a>
             </div>
         </div>
     </div>
@@ -22,31 +22,51 @@
         </div>
         <div class="service-grid">
             <div class="service-card">
-                <div class="card-icon">🎓</div>
+                <div class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
+                        <title>Schulungen</title>
+                        <path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3zm0 7.18L4.97 8 12 4.82 19.03 8 12 10.18zM5 12.5v3.75C5 18.55 8.58 20 12 20s7-1.45 7-3.75V12.5l-7 3.18-7-3.18z"/>
+                    </svg>
+                </div>
                 <h3>Schulungen</h3>
                 <p>Schulungen für WDVS Firmen mit Fokus auf spezifische bauphysikalische und bauchemische Vorgänge</p>
-                <a href="/schulungen" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
+                <a href="schulungen" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
             </div>
 
             <div class="service-card">
-                <div class="card-icon">📊</div>
+                <div class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
+                        <title>Gutachten</title>
+                        <path d="M3 3h18v2H3V3zm2 5h3v11H5V8zm5 3h3v8h-3v-8zm5-5h3v13h-3V6z"/>
+                    </svg>
+                </div>
                 <h3>Gutachten</h3>
                 <p>Gerichtlich beeideter Sachverständiger für Bauphysik, Bauschäden und mehr</p>
-                <a href="/gutachten" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
+                <a href="gutachten" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
             </div>
 
             <div class="service-card">
-                <div class="card-icon">✓</div>
+                <div class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
+                        <title>Qualitätskontrolle</title>
+                        <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
+                    </svg>
+                </div>
                 <h3>Qualitätskontrolle</h3>
                 <p>Begleitende Qualitätskontrolle für Bauvorhaben aller Art</p>
-                <a href="/qualitaetskontrolle" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
+                <a href="qualitaetskontrolle" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
             </div>
 
             <div class="service-card">
-                <div class="card-icon">💡</div>
+                <div class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
+                        <title>Beratung</title>
+                        <path d="M9 21h6v-1H9v1zm3-19C7.92 2 5 4.92 5 8c0 2.38 1.19 3.84 2.44 5.05.69.66 1.17 1.57 1.33 2.55h6.46c.16-.98.64-1.89 1.33-2.55C17.81 11.84 19 10.38 19 8c0-3.08-2.92-6-7-6zm0 2c2.79 0 5 2.21 5 4 0 1.6-.86 2.63-1.93 3.67-.88.85-1.52 1.92-1.82 3.13h-2.5c-.3-1.21-.94-2.28-1.82-3.13C8.86 10.63 8 9.6 8 8c0-1.79 2.21-4 4-4z"/>
+                    </svg>
+                </div>
                 <h3>Beratung</h3>
                 <p>Professionelle Beratung zu allen bautechnischen Fragen</p>
-                <a href="/beratung" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
+                <a href="beratung" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
             </div>
         </div>
     </div>
@@ -64,7 +84,7 @@
                     umfassendes Fachwissen und langjährige Erfahrung in allen Bereichen des Bauwesens.</p>
                 <p>Ob Schulungen, Gutachten, Qualitätskontrollen oder Beratungen - ich stehe Ihnen mit meiner Expertise
                     zur Verfügung.</p>
-                <a href="/persoenliches" class="btn btn-gradient">Mehr über mich</a>
+                <a href="persoenliches" class="btn btn-gradient">Mehr über mich</a>
             </div>
         </div>
     </div>
@@ -79,7 +99,7 @@
                 <div class="accent-line"></div>
             </div>
             <p>Für Anfragen stehe ich Ihnen gerne zur Verfügung.</p>
-            <a href="/kontakt" class="btn btn-primary">Zum Kontaktformular</a>
+            <a href="kontakt" class="btn btn-primary">Zum Kontaktformular</a>
         </div>
     </div>
 </section>
@@ -219,9 +239,16 @@
     }
 
     .card-icon {
-        font-size: 2.5rem;
         margin-bottom: 1.5rem;
         display: inline-block;
+        color: var(--light-text);
+    }
+
+    .card-icon svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: currentColor;
+        display: block;
     }
 
     .service-card h3 {

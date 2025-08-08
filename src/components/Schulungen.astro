@@ -18,23 +18,48 @@
       <p>Meine Schulungen bieten fundiertes Wissen mit Fokus auf:</p>
       <ul class="feature-list">
         <li>
-          <span class="feature-icon">✓</span>
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
+              <title>Check</title>
+              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
+            </svg>
+          </span>
           <span>Grundlagen der spezifischen bauphysikalischen und bauchemischen Vorgänge</span>
         </li>
         <li>
-          <span class="feature-icon">✓</span>
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
+              <title>Check</title>
+              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
+            </svg>
+          </span>
           <span>Aufbau eines WDVS und Funktion der einzelnen Komponenten</span>
         </li>
         <li>
-          <span class="feature-icon">✓</span>
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
+              <title>Check</title>
+              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
+            </svg>
+          </span>
           <span>Erkennen, Analysieren und Beheben von Fehlern bei der Verarbeitung</span>
         </li>
         <li>
-          <span class="feature-icon">✓</span>
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
+              <title>Check</title>
+              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
+            </svg>
+          </span>
           <span>Spezielle Detaillösungen mit praktischen Übungen</span>
         </li>
         <li>
-          <span class="feature-icon">✓</span>
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
+              <title>Check</title>
+              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
+            </svg>
+          </span>
           <span>Verarbeitungsrichtlinien von Systemanbietern</span>
         </li>
       </ul>
@@ -62,9 +87,7 @@
       <p>Die Schulungen werden speziell an die Bedürfnisse Ihres Unternehmens angepasst.</p>
       <p>Kontaktieren Sie mich für ein individuelles Angebot oder weitere Informationen.</p>
 
-      <div class="cta-section">
-        <a href="/kontakt" class="btn btn-gradient">Kontakt aufnehmen</a>
-      </div>
+      <a href="kontakt" class="btn">Kontakt aufnehmen</a>
     </div>
   </div>
 </section>
@@ -105,6 +128,8 @@
     position: relative;
   }
 
+  /* Wenn weiterhin ein „Rahmen“-Eindruck entsteht, diese Zeilen testweise deaktivieren
+     oder den Hintergrund stattdessen direkt auf .content-section setzen. */
   .content-section::before {
     content: "";
     position: absolute;
@@ -162,9 +187,19 @@
   }
 
   .feature-icon {
-    color: #34d399;
-    font-weight: 700;
-    margin-top: 0.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-text);
+    margin-top: 0.1rem;
+    line-height: 1;
+  }
+
+  .feature-icon svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: currentColor;
+    display: block;
   }
 
   .info-card {
@@ -191,25 +226,19 @@
     padding: 1.25rem 1.5rem 1.5rem 1.5rem;
   }
 
-  .cta-section {
-    text-align: center;
-    margin-top: 2rem;
-  }
-
-  .btn.btn-gradient {
+  .btn {
     display: inline-block;
-    padding: 0.9rem 2rem;
-    background: var(--accent-gradient);
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-color);
     color: white;
     text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(155, 48, 255, 0.3);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
   }
 
-  .btn.btn-gradient:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 7px 20px rgba(155, 48, 255, 0.4);
+  .btn:hover {
+    background-color: var(--subtle-accent);
   }
 
   @media (min-width: 992px) {
