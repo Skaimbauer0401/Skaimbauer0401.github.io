@@ -185,14 +185,24 @@
     }
 
     @media (max-width: 900px) {
+        /* Eine Spalte statt zwei */
         .contact-wrapper {
             grid-template-columns: 1fr;
+            gap: 1.5rem;
         }
+
+        /* Beide Boxen dieselben Innenabstände geben (links/rechts gleich) */
+        .contact-info,
+        .contact-form-container {
+            padding: 1.5rem; /* -> anpassen wenn du mehr/weniger Abstand willst */
+        }
+
+        /* Formular: eine Spalte, kein eigenes Seitenpadding (Container regelt das) */
         .contact-form {
             grid-template-columns: 1fr;
             gap: 1rem;
+            padding: 0;          /* verhindert doppelten/ungleichen Innenabstand */
             width: 100%;
-            padding: 0 0.5rem; /* <-- seitlicher Abstand innen */
             box-sizing: border-box;
         }
 
@@ -201,9 +211,29 @@
             grid-column: 1 / -1;
         }
 
+        /* Inputs/Textareas füllen den zur Verfügung stehenden Raum sauber aus */
         input, textarea {
             width: 100%;
             max-width: 100%;
+            box-sizing: border-box; /* wichtig, damit padding die Breite nicht 'sprengt' */
+        }
+
+        /* Checkbox & Label ordentlich ausrichten */
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .checkbox-label input {
+            margin: 0; /* vertikal zentriert durch align-items:center */
+        }
+
+        .form-submit {
+            grid-column: 1 / -1;
+            margin-top: 0.5rem;
+            text-align: left;
         }
     }
+
 </style>
