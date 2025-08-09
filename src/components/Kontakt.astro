@@ -187,7 +187,21 @@
     @media (max-width: 900px) {
         .contact-wrapper {
             grid-template-columns: 1fr;
-            gap: 1rem;
+        }
+        .contact-form {
+            grid-template-columns: 1fr; /* alle Felder untereinander */
+            gap: 1rem; /* kein großer horizontaler Abstand mehr */
+            width: 100%; /* passt sich an den Viewport an */
+        }
+
+        .form-group,
+        .form-group.full-width {
+            grid-column: 1 / -1; /* Feld nimmt volle Breite */
+        }
+
+        input, textarea {
+            width: 100%; /* kein Überstand */
+            max-width: 100%;
         }
     }
 </style>
