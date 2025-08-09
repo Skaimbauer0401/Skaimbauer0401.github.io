@@ -296,7 +296,7 @@
         left: 0;
         width: 100%;
         height: 80px;
-        background: linear-gradient(to bottom, var(--primary-color), rgba(20,22,24,0));
+        background: linear-gradient(to bottom, var(--primary-color), rgba(20, 22, 24, 0));
         z-index: 0;
         pointer-events: none;
     }
@@ -309,7 +309,7 @@
         height: 100%;
         /* dezenter, neutraler Hintergrund statt bunter Fläche */
         background: radial-gradient(1200px 500px at 80% -200px, rgba(96, 112, 134, 0.06), transparent 60%),
-                    radial-gradient(800px 400px at 10% 120%, rgba(96, 112, 134, 0.04), transparent 60%);
+        radial-gradient(800px 400px at 10% 120%, rgba(96, 112, 134, 0.04), transparent 60%);
         z-index: -1;
     }
 
@@ -368,13 +368,13 @@
     /* Top-Fade: von Seitenhintergrund in den Kontaktbereich */
     .contact-section::before {
         top: 0;
-        background: linear-gradient(to bottom, var(--primary-color), rgba(20,22,24,0));
+        background: linear-gradient(to bottom, var(--primary-color), rgba(20, 22, 24, 0));
     }
 
     /* Bottom-Fade: aus dem Kontaktbereich wieder in den Seitenhintergrund */
     .contact-section::after {
         bottom: 0;
-        background: linear-gradient(to top, var(--primary-color), rgba(20,22,24,0));
+        background: linear-gradient(to top, var(--primary-color), rgba(20, 22, 24, 0));
     }
 
     .contact-card {
