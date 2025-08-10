@@ -1,0 +1,73 @@
+---
+// src/pages/404.astro
+---
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>404 - Seite nicht gefunden</title>
+
+</head>
+<body>
+<main class="content">
+    <h1>404</h1>
+    <p>Oops! Die Seite, die du suchst, wurde nicht gefunden.</p>
+    <a href="/">Zur Startseite</a>
+</main>
+</body>
+</html>
+<style>
+    :root {
+        --primary-color: #141618;
+        --secondary-color: #1b1f23;
+        --accent-gradient: linear-gradient(90deg, #607086 0%, #6b7b8f 100%);
+        --light-text: #f5f7fa;
+        --border-radius: 10px;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--primary-color);
+        color: var(--light-text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content {
+        background-color: var(--secondary-color);
+        padding: 3rem 2rem;
+        border-radius: var(--border-radius);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        max-width: 400px;
+        width: 90%;
+    }
+    h1 {
+        font-size: 5rem;
+        background: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    a {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--accent-gradient);
+        color: var(--primary-color);
+        font-weight: 600;
+        border-radius: var(--border-radius);
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+    a:hover {
+        filter: brightness(1.1);
+    }
+</style>
