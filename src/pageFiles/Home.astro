@@ -1,4 +1,5 @@
 ---
+import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro";
 ---
 <div class="hero">
     <div class="container">
@@ -6,7 +7,7 @@
             <h1>Baumeister Andreas Bauer</h1>
             <h2>Allgemein beeideter und gerichtlich zertifizierter Sachverständiger</h2>
             <div class="hero-cta">
-                <a href="KontaktPage" class="btn btn-primary">Kontakt aufnehmen</a>
+                <KontaktAufnehmenButton/>
             </div>
         </div>
     </div>
@@ -84,7 +85,7 @@
                     umfassendes Fachwissen und langjährige Erfahrung in allen Bereichen des Bauwesens.</p>
                 <p>Ob Schulungen, Gutachten, Qualitätskontrollen oder Beratungen - ich stehe Ihnen mit meiner Expertise
                     zur Verfügung.</p>
-                <a href="PersoenlichesPage" class="btn btn-gradient">Mehr über mich</a>
+                <a href="Persoenliches" class="btn-primary">Mehr über mich</a>
             </div>
         </div>
     </div>
@@ -99,13 +100,14 @@
                 <div class="accent-line"></div>
             </div>
             <p>Für Anfragen stehe ich Ihnen gerne zur Verfügung.</p>
-            <a href="KontaktPage" class="btn btn-primary">Zum Kontaktformular</a>
+            <div>
+                <KontaktAufnehmenButton/>
+            </div>
         </div>
     </div>
 </section>
 
 <style>
-    /* Hero Section */
     .hero {
         position: relative;
         color: var(--light-text);
@@ -418,8 +420,7 @@
         color: rgba(255, 255, 255, 0.8);
     }
 
-    /* Buttons */
-    .btn {
+    .btn-primary {
         display: inline-block;
         padding: 0.75rem 1.75rem;
         text-decoration: none;
@@ -429,9 +430,6 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
-    }
-
-    .btn-primary {
         background: var(--accent-gradient);
         color: white;
         box-shadow: 0 4px 15px rgba(40, 180, 120, 0.3), 0 4px 15px rgba(232, 62, 140, 0.2);
@@ -440,29 +438,6 @@
     .btn-primary:hover {
         transform: translateY(-3px);
         box-shadow: 0 7px 20px rgba(40, 180, 120, 0.4), 0 7px 20px rgba(232, 62, 140, 0.3);
-    }
-
-    .btn-outline {
-        background: transparent;
-        color: var(--light-text);
-        border: 2px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .btn-outline:hover {
-        border-color: var(--accent-color);
-        color: var(--accent-color);
-        transform: translateY(-3px);
-    }
-
-    .btn-gradient {
-        background: var(--accent-gradient);
-        color: white;
-        box-shadow: 0 4px 15px rgba(232, 62, 140, 0.3);
-    }
-
-    .btn-gradient:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 7px 20px rgba(232, 62, 140, 0.4);
     }
 
     /* Responsive Design */

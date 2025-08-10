@@ -1,4 +1,5 @@
 ---
+import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
 ---
 <div class="page-header">
     <div class="container">
@@ -117,7 +118,7 @@
 
             <div class="contact-cta">
                 <p>Haben Sie Fragen oder möchten Sie mehr über meine Qualifikationen erfahren?</p>
-                <a href="KontaktPage" class="btn">Kontakt aufnehmen</a>
+                <KontaktAufnehmenButton />
             </div>
         </div>
     </div>
@@ -200,15 +201,6 @@
     .contact-cta {
         text-align: center;
         margin-top: 2rem;
-    }
-
-    .btn {
-        display: inline-block;
-        padding: 0.75rem 2rem;
-        background-color: var(--primary-color);
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
     }
 
     @media (min-width: 992px) {
