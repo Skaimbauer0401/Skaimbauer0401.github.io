@@ -1,4 +1,6 @@
 ---
+import MobileMenu from "../components/MobileMenu";
+
 interface Props {
     title?: string;
     description?: string;
@@ -35,12 +37,12 @@ const {
             <a href={import.meta.env.BASE_URL}>Baumeister Bauer</a>
         </div>
         <nav>
-            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+            <button class="mobile-menu-btn" aria-label="Menü öffnen" id="mobile-menu-btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href={import.meta.env.BASE_URL}>Home</a></li>
                 <li><a href="SchulungenPage">Schulungen</a></li>
                 <li><a href="GutachtenPage">Gutachten</a></li>
@@ -402,4 +404,5 @@ const {
             }
         });
     });
+
 </script>
