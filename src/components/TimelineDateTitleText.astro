@@ -1,0 +1,38 @@
+---
+const { date,title, text } = Astro.props;
+---
+<style>
+    .timeline-item {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+    .timeline-date {
+        font-weight: bold;
+        color: var(--light-text);
+    }
+    .timeline-content {
+        background: var(--card-bg);
+        padding: 0.8rem 1rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        border-left: 3px solid;
+        border-image: var(--accent-gradient) 1;
+        margin-top: 0.3rem;
+    }
+    .timeline-content h3 {
+        margin-top: 0;
+        color: var(--accent-color);
+    }
+    .timeline-content p {
+        margin: 0.3rem 0 0;
+        color: var(--light-text);
+        line-height: 1.4;
+    }
+</style>
+<div class="timeline-item">
+    <div class="timeline-date">{date}</div>
+    <div class="timeline-content">
+        <h3>{title}</h3>
+        <p>{text}</p>
+    </div>
+</div>

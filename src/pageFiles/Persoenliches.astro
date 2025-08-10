@@ -1,5 +1,7 @@
 ---
 import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
+import TimelineDateTitleText from "../components/TimelineDateTitleText.astro"
+import CardTitleText from "../components/CardTitleText.astro";
 ---
 <div class="page-header">
     <div class="container">
@@ -32,87 +34,35 @@ import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
             <div class="career-section">
                 <h2>Beruflicher Werdegang</h2>
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">2006 - heute</div>
-                        <div class="timeline-content">
-                            <h3>Wärmedämmverbundsysteme</h3>
-                            <p>Spartenleiter für Wärmedemmverbundsysteme</p>
-                        </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">März 2012</div>
-                        <div class="timeline-content">
-                            <h3>Baumeisterprüfung</h3>
-                            <p>Erfolgreicher Abschluss der Befähigungsprüfung zum Gewerbe Baumeister
-                            </p>
-                        </div>
-                    </div>
+                    <TimelineDateTitleText date="2006 - heute" title="Wärmedämmverbundsysteme" text="Spartenleiter für Wärmedemmverbundsysteme"/>
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">August 2012</div>
-                        <div class="timeline-content">
-                            <h3>Firmengründung</h3>
-                            <p>Gründung des Architekturbüros Baumeister Andreas Bauer e.U.</p>
-                        </div>
-                    </div>
+                    <TimelineDateTitleText date="März 2012" title="Baumeisterprüfung" text="Erfolgreicher Abschluss der Befähigungsprüfung zum Gewerbe Baumeister"/>
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">2014</div>
-                        <div class="timeline-content">
-                            <h3>Austrian Standards (Normungsinstitut)</h3>
-                            <p>Experte von Austrian Standards ON-AG 166.02 Wärmedämmverbundsysteme</p>
-                        </div>
-                    </div>
+                    <TimelineDateTitleText date="August 2012" title="Firmengründung" text="Gründung des Architekturbüros Baumeister Andreas Bauer e.U."/>
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">2015</div>
-                        <div class="timeline-content">
-                            <h3>Gerichtssachverständiger WDVS</h3>
-                            <p>Allgemein beeideter und gerichtlich zertifizierter Sachverständiger für die Herstellung von Wärmedämmverbundsystemen</p>
-                        </div>
-                    </div>
+                    <TimelineDateTitleText date="2014" title="Austrian Standards (Normungsinstitut)" text="Experte von Austrian Standards ON-AG 166.02 Wärmedämmverbundsysteme"/>
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">2016</div>
-                        <div class="timeline-content">
-                            <h3>Austrian Standards (Normungsinstitut)</h3>
-                            <p>Experte von Austrian Standards ON-AG 166.02 Estriche sowie Putz- und Mauermörtel</p>
-                        </div>
-                    </div>
+                    <TimelineDateTitleText date="2015" title="Gerichtssachverständiger WDVS" text="Allgemein beeideter und gerichtlich zertifizierter Sachverständiger für die Herstellung von Wärmedämmverbundsystemen"/>
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">2019</div>
-                        <div class="timeline-content">
-                            <h3>ARGE Fensterbank</h3>
-                            <p>Experte der ARGE Fensterbank</p>
-                        </div>
-                    </div>
+                    <TimelineDateTitleText date="2016" title="Austrian Standards (Normungsinstitut)" text="Experte von Austrian Standards ON-AG 166.02 Estriche sowie Putz- und Mauermörtel"/>
+
+                    <TimelineDateTitleText date="2019" title="ARGE Fensterbank" text="Experte der ARGE Fensterbank"/>
+
                 </div>
             </div>
 
             <div class="expertise-section">
                 <h2>Fachliche Schwerpunkte</h2>
                 <div class="expertise-grid">
-                    <div class="expertise-item">
-                        <h3>Bauphysik</h3>
-                        <p>Wärmeschutz, Feuchteschutz, Schallschutz, Brandschutz</p>
-                    </div>
+                    <CardTitleText title="Bauphysik" text="Wärmeschutz, Feuchteschutz, Schallschutz, Brandschutz"/>
 
-                    <div class="expertise-item">
-                        <h3>Wärmedämm-Verbundsysteme</h3>
-                        <p>Planung, Ausführung, Sanierung, Schadensanalyse</p>
-                    </div>
+                    <CardTitleText title="Wärmedämm-Verbundsysteme" text="Planung, Ausführung, Sanierung, Schadensanalyse"/>
 
-                    <div class="expertise-item">
-                        <h3>Bauschäden</h3>
-                        <p>Ursachenermittlung, Sanierungskonzepte, Gutachten</p>
-                    </div>
+                    <CardTitleText title="Bauschäden" text="Ursachenermittlung, Sanierungskonzepte, Gutachten"/>
 
-                    <div class="expertise-item">
-                        <h3>Qualitätssicherung</h3>
-                        <p>Baubegleitung, Abnahmen, Qualitätskontrollen</p>
-                    </div>
+                    <CardTitleText title="Qualitätssicherung" text="Baubegleitung, Abnahmen, Qualitätskontrollen"/>
+
                 </div>
             </div>
 
@@ -170,16 +120,6 @@ import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
         width: 2px;
         background: var(--accent-gradient);
         opacity: 0.6;
-    }
-
-    .timeline-item {
-        position: relative;
-        margin-bottom: 1.5rem;
-    }
-
-    .timeline-date {
-        font-weight: bold;
-        color: var(--light-text);
     }
 
     .expertise-grid {

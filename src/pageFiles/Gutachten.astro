@@ -1,5 +1,6 @@
 ---
 import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
+import CardTitleText from "../components/CardTitleText.astro"
 ---
 <div class="page-header">
     <div class="container">
@@ -16,25 +17,15 @@ import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
                 in folgenden Bereichen:</p>
 
             <div class="expertise-grid">
-                <div class="expertise-card">
-                    <h3>Bauschäden</h3>
-                    <p>Umfassende Analyse und Dokumentation von Bauschäden jeglicher Art</p>
-                </div>
 
-                <div class="expertise-card">
-                    <h3>Bauphysik</h3>
-                    <p>Untersuchungen zu Wärmeschutz, Feuchteschutz, Schallschutz und mehr</p>
-                </div>
+                <CardTitleText title="Bauschäden" text="Umfassende Analyse und Dokumentation von Bauschäden jeglicher Art"/>
 
-                <div class="expertise-card">
-                    <h3>WDVS</h3>
-                    <p>Spezialisierung auf Wärmedämm-Verbundsysteme und deren Problematiken</p>
-                </div>
+                <CardTitleText title="Bauphysik" text="Untersuchungen zu Wärmeschutz, Feuchteschutz, Schallschutz und mehr"/>
 
-                <div class="expertise-card">
-                    <h3>Bauwerkstrockenlegung</h3>
-                    <p>Analyse und Lösungsvorschläge bei Feuchtigkeitsproblemen</p>
-                </div>
+                <CardTitleText title="WDVS" text="Spezialisierung auf Wärmedämm-Verbundsysteme und deren Problematiken"/>
+
+                <CardTitleText title="Bauwerkstrockenlegung" text="Analyse und Lösungsvorschläge bei Feuchtigkeitsproblemen"/>
+
             </div>
 
             <h2>Meine Leistungen</h2>
@@ -129,58 +120,6 @@ import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
         grid-template-columns: repeat(2, minmax(0, 1fr)); /* Immer 2 Spalten, egal welche Bildschirmbreite */
         gap: 1.5rem;
         margin: 2rem 0;
-    }
-
-    .expertise-card {
-        background-color: var(--card-bg);
-        padding: 1.5rem;
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        border-left: 2px solid;
-        border-image: var(--accent-gradient) 1;
-        color: var(--light-text);
-    }
-
-    .expertise-card h3 {
-        color: var(--light-text);
-        margin-bottom: 0.75rem;
-        white-space: normal;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        hyphens: auto;
-    }
-
-    .expertise-card p {
-        white-space: normal;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        hyphens: auto;
-        white-space: normal;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        hyphens: auto;
-    }
-
-    .expertise-card p {
-        white-space: normal;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        hyphens: auto;
-        white-space: normal;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        hyphens: auto;
-    }
-
-    .expertise-card p {
-        white-space: normal;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        hyphens: auto;
-        white-space: normal;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        hyphens: auto;
     }
 
     .info-box {

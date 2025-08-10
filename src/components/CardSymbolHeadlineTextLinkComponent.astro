@@ -1,0 +1,78 @@
+---
+const { icon, title, text, link } = Astro.props;
+---
+<style>
+    .service-card {
+        background-color: var(--card-bg);
+        padding: 2rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .service-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-gradient);
+        z-index: 1;
+        transition: height 0.3s ease;
+    }
+    .service-card:hover {
+        transform: translateY(-10px);
+        background-color: var(--card-hover);
+    }
+    .service-card h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--light-text);
+    }
+    .service-card p {
+        margin-bottom: 1.5rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .card-icon {
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        color: var(--light-text);
+    }
+    .card-icon svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: currentColor;
+        display: block;
+    }
+    .btn-text {
+        color: var(--accent-color);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+        transition: all 0.3s;
+    }
+    .btn-text .arrow {
+        margin-left: 5px;
+        transition: transform 0.3s;
+    }
+    .btn-text:hover .arrow {
+        transform: translateX(5px);
+    }
+</style>
+
+<div class="service-card">
+    <div class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
+            <title>Schulungen</title>
+            <path d={icon}/>
+        </svg>
+    </div>
+    <h3>{title}</h3>
+    <p>{text}</p>
+    <a href={link} class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
+</div>

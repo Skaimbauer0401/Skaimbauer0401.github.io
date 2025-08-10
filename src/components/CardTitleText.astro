@@ -1,0 +1,37 @@
+---
+const { title, text } = Astro.props;
+---
+<style>
+    .expertise-card {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        border-left: 2px solid;
+        border-image: var(--accent-gradient) 1;
+        color: var(--light-text);
+    }
+    .expertise-card h3 {
+        color: var(--light-text);
+        margin-bottom: 0.75rem;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        hyphens: auto;
+    }
+    .expertise-card p {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        hyphens: auto;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        hyphens: auto;
+    }
+</style>
+
+<div class="expertise-card">
+    <h3>{title}</h3>
+    <p>{text}</p>
+</div>

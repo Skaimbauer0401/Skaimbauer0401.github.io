@@ -1,5 +1,6 @@
 ---
 import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro";
+import CardSymbolHeadlineTextLinkComponent from "../components/CardSymbolHeadlineTextLinkComponent.astro";
 ---
 <div class="hero">
     <div class="container">
@@ -22,53 +23,15 @@ import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro";
             <div class="accent-line"></div>
         </div>
         <div class="service-grid">
-            <div class="service-card">
-                <div class="card-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
-                        <title>Schulungen</title>
-                        <path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3zm0 7.18L4.97 8 12 4.82 19.03 8 12 10.18zM5 12.5v3.75C5 18.55 8.58 20 12 20s7-1.45 7-3.75V12.5l-7 3.18-7-3.18z"/>
-                    </svg>
-                </div>
-                <h3>Schulungen</h3>
-                <p>Schulungen für WDVS Firmen mit Fokus auf spezifische bauphysikalische und bauchemische Vorgänge</p>
-                <a href="Schulungen" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
-            </div>
+            
+            <CardSymbolHeadlineTextLinkComponent title="Schulungen" link="Schulungen" text="Schulungen für WDVS Firmen mit Fokus auf spezifische bauphysikalische und bauchemische Vorgänge" icon="M12 3L1 8l11 5 9-4.09V17h2V8L12 3zm0 7.18L4.97 8 12 4.82 19.03 8 12 10.18zM5 12.5v3.75C5 18.55 8.58 20 12 20s7-1.45 7-3.75V12.5l-7 3.18-7-3.18z"/>
 
-            <div class="service-card">
-                <div class="card-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
-                        <title>Gutachten</title>
-                        <path d="M3 3h18v2H3V3zm2 5h3v11H5V8zm5 3h3v8h-3v-8zm5-5h3v13h-3V6z"/>
-                    </svg>
-                </div>
-                <h3>Gutachten</h3>
-                <p>Gerichtlich beeideter Sachverständiger für Bauphysik, Bauschäden und mehr</p>
-                <a href="Gutachten" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
-            </div>
+            <CardSymbolHeadlineTextLinkComponent title="Gutachten" link="Gutachten" text="Gerichtlich beeideter Sachverständiger für Bauphysik, Bauschäden und mehr" icon="M3 3h18v2H3V3zm2 5h3v11H5V8zm5 3h3v8h-3v-8zm5-5h3v13h-3V6z"/>
 
-            <div class="service-card">
-                <div class="card-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
-                        <title>Qualitätskontrolle</title>
-                        <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
-                    </svg>
-                </div>
-                <h3>Qualitätskontrolle</h3>
-                <p>Begleitende Qualitätskontrolle für Bauvorhaben aller Art</p>
-                <a href="Qualitaetskontrolle" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
-            </div>
+            <CardSymbolHeadlineTextLinkComponent title="Qualitätskontrolle" link="Qualitaetskontrolle" text="Begleitende Qualitätskontrolle für Bauvorhaben aller Art" icon="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
 
-            <div class="service-card">
-                <div class="card-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" focusable="false">
-                        <title>Beratung</title>
-                        <path d="M9 21h6v-1H9v1zm3-19C7.92 2 5 4.92 5 8c0 2.38 1.19 3.84 2.44 5.05.69.66 1.17 1.57 1.33 2.55h6.46c.16-.98.64-1.89 1.33-2.55C17.81 11.84 19 10.38 19 8c0-3.08-2.92-6-7-6zm0 2c2.79 0 5 2.21 5 4 0 1.6-.86 2.63-1.93 3.67-.88.85-1.52 1.92-1.82 3.13h-2.5c-.3-1.21-.94-2.28-1.82-3.13C8.86 10.63 8 9.6 8 8c0-1.79 2.21-4 4-4z"/>
-                    </svg>
-                </div>
-                <h3>Beratung</h3>
-                <p>Professionelle Beratung zu allen bautechnischen Fragen</p>
-                <a href="Beratung" class="btn-text">Mehr erfahren <span class="arrow">→</span></a>
-            </div>
+            <CardSymbolHeadlineTextLinkComponent title="Beratung" link="Beratung" text="Professionelle Beratung zu allen bautechnischen Fragen" icon="M9 21h6v-1H9v1zm3-19C7.92 2 5 4.92 5 8c0 2.38 1.19 3.84 2.44 5.05.69.66 1.17 1.57 1.33 2.55h6.46c.16-.98.64-1.89 1.33-2.55C17.81 11.84 19 10.38 19 8c0-3.08-2.92-6-7-6zm0 2c2.79 0 5 2.21 5 4 0 1.6-.86 2.63-1.93 3.67-.88.85-1.52 1.92-1.82 3.13h-2.5c-.3-1.21-.94-2.28-1.82-3.13C8.86 10.63 8 9.6 8 8c0-1.79 2.21-4 4-4z"/>
+
         </div>
     </div>
 </section>
@@ -210,77 +173,6 @@ import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro";
         padding: 0 1.5rem;
         margin: 0 auto;
         max-width: 1400px;
-    }
-
-    .service-card {
-        background-color: var(--card-bg);
-        padding: 2rem;
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-    }
-
-    .service-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: var(--accent-gradient);
-        z-index: 1;
-        transition: height 0.3s ease;
-    }
-
-    .service-card:hover {
-        transform: translateY(-10px);
-        background-color: var(--card-hover);
-    }
-
-    .card-icon {
-        margin-bottom: 1.5rem;
-        display: inline-block;
-        color: var(--light-text);
-    }
-
-    .card-icon svg {
-        width: 2.5rem;
-        height: 2.5rem;
-        fill: currentColor;
-        display: block;
-    }
-
-    .service-card h3 {
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--light-text);
-    }
-
-    .service-card p {
-        margin-bottom: 1.5rem;
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    .btn-text {
-        color: var(--accent-color);
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        font-weight: 500;
-        transition: all 0.3s;
-    }
-
-    .btn-text .arrow {
-        margin-left: 5px;
-        transition: transform 0.3s;
-    }
-
-    .btn-text:hover .arrow {
-        transform: translateX(5px);
     }
 
     /* About Section */
