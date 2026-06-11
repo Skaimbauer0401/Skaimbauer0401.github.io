@@ -1,190 +1,285 @@
 ---
-import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
+import { Image } from "astro:assets";
+import beratung from "../assets/original/Beratung2.jpg";
+import planerFirmen from "../assets/original/planer_firmen.jpg";
+import planerFensteranschluss from "../assets/original/planer_fensteranschluss.jpg";
 ---
-<div class="page-header">
-    <div class="container">
-        <h1>Beratung</h1>
-    </div>
-    <div class="header-overlay"></div>
-</div>
 
-<section class="content-section">
-    <div class="container">
-        <div class="content-wrapper">
-            <h2>Fachkundige Beratung rund ums Bauen</h2>
-            <p>Mit meinem umfassenden Fachwissen und meiner langjährigen Erfahrung im Bauwesen biete ich Ihnen
-                kompetente Beratung bei allen bautechnischen Fragen und Herausforderungen.</p>
-
-            <h2>Meine Beratungsleistungen</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3>Technische Beratung</h3>
-                    <ul>
-                        <li>Beurteilung von Baumängeln und Bauschäden</li>
-                        <li>Empfehlungen zu Sanierungsmaßnahmen</li>
-                        <li>Beratung zu bauphysikalischen Fragen</li>
-                        <li>Unterstützung bei komplexen technischen Problemen</li>
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <h3>Planungsberatung</h3>
-                    <ul>
-                        <li>Analyse von Planungsunterlagen</li>
-                        <li>Optimierung von Baukonstruktionen</li>
-                        <li>Empfehlungen zu Bauausführungen</li>
-                        <li>Beratung zur Materialauswahl</li>
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <h3>Sanierungsberatung</h3>
-                    <ul>
-                        <li>Konzepte für Bausanierungen</li>
-                        <li>Beratung bei Feuchtigkeitsproblemen</li>
-                        <li>Lösungen für energetische Sanierungen</li>
-                        <li>Prüfung von Sanierungsangeboten</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-box">
-                <h3>Ihre Vorteile</h3>
-                <ul>
-                    <li>Unabhängige und objektive Beratung</li>
-                    <li>Fundiertes Fachwissen eines gerichtlich zertifizierten Sachverständigen</li>
-                    <li>Praxisorientierte Lösungsvorschläge</li>
-                    <li>Kosteneinsparungen durch vermiedene Fehlentscheidungen</li>
-                    <li>Erhöhte Rechtssicherheit bei Bauprojekten</li>
-                </ul>
-            </div>
-
-            <h2>Für wen ist meine Beratung geeignet?</h2>
-            <ul>
-                <li>Private Bauherren und Immobilienbesitzer</li>
-                <li>Architekten und Planer</li>
-                <li>Bauunternehmen und Handwerksbetriebe</li>
-                <li>Hausverwaltungen und Wohnungseigentümergemeinschaften</li>
-                <li>Rechtsanwälte bei baurechtlichen Fragen</li>
-            </ul>
-
-            <p>Benötigen Sie fachkundige Beratung oder haben Sie Fragen zu Ihrem Bauprojekt? Kontaktieren Sie mich.</p>
-            <KontaktAufnehmenButton />
+<section class="page-hero">
+    <div class="container hero-grid">
+        <div>
+            <p class="overline">Leistung 04</p>
+            <h1>Beratung</h1>
+            <p class="lead">Bei einem Beratungsgespräch wird über Ihre Anliegen gesprochen und das mögliche Problem
+                eventuell besichtigt – für Bauherren ebenso wie für Planer und ausführende Firmen.</p>
+        </div>
+        <div class="hero-media framed">
+            <Image src={beratung} alt="Andreas Bauer im Beratungsgespräch" class="duotone" widths={[480, 800]} sizes="(max-width: 860px) 100vw, 480px"/>
         </div>
     </div>
 </section>
 
+<section class="section steps-section">
+    <div class="container">
+        <h2>Das Beratungsgespräch</h2>
+        <div class="step-grid">
+            <article class="step-card">
+                <span class="step-index">01</span>
+                <h3>Besichtigung und Beurteilung</h3>
+                <p>Bei dieser Besprechung ist eine Beurteilung der augenscheinlichen Fakten möglich. Oft ist es jedoch
+                    notwendig, Bauteilöffnungen durchzuführen, um die kausalen Ursachen für das augenscheinliche
+                    Erscheinungsbild feststellen zu können.</p>
+            </article>
+            <article class="step-card">
+                <span class="step-index">02</span>
+                <h3>Zusammenfassung per E-Mail</h3>
+                <p>Bei Wunsch erstelle ich eine kurze Zusammenfassung (kein Gutachten) über das Beratungsgespräch per
+                    E-Mail. Diese kann verwendet werden, um die weitere Vorgehensweise mit Ihrem Vertragspartner
+                    abzustimmen.</p>
+            </article>
+            <article class="step-card">
+                <span class="step-index">03</span>
+                <h3>Gemeinsamer Termin</h3>
+                <p>Sollte noch ein gemeinsamer Termin mit Ihrem Vertragspartner nötig sein, um die besichtigten Mängel
+                    zu besprechen, unterstütze ich Sie gerne. In den meisten Fällen lässt sich dabei eine Einigung
+                    erzielen.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<hr class="section-rule"/>
+
+<section class="section">
+    <div class="container content-grid">
+        <div>
+            <h2>Beratung für Planer und ausführende Firmen</h2>
+            <p>Oft ist es wichtig, eine externe fachkundige Person in die Detailplanung einzubinden. Dadurch erhält
+                man eine neutrale, gewerkeübergreifende und önormkonforme Detailplanung – und kann schon vorzeitig
+                eventuelle Detail- und Ausführungsfehler vermeiden.</p>
+            <p class="list-intro">Besondere Schwerpunkte dieser Planung sind:</p>
+            <ul class="topic-list">
+                <li>Sonnenschutz</li>
+                <li>Fenster und Türen</li>
+                <li>Fensterbänke</li>
+                <li>WDVS (Vollwärmeschutz)</li>
+                <li>Außenputz</li>
+                <li>Attika</li>
+                <li>An- und Abschlüsse</li>
+                <li>Abdichtungen</li>
+            </ul>
+        </div>
+        <div class="drawing-stack">
+            <figure class="framed">
+                <Image src={planerFirmen} alt="Technische Detailzeichnung eines Anschlusses im WDVS" width={600}/>
+                <figcaption>Detailplanung: Anschlussausbildung im WDVS</figcaption>
+            </figure>
+            <figure class="framed">
+                <Image src={planerFensteranschluss} alt="Technische Detailzeichnung eines Fensteranschlusses" width={600}/>
+                <figcaption>Detailplanung: Fensteranschluss</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<hr class="section-rule"/>
+
+<section class="section">
+    <div class="container content-grid qk-grid">
+        <div>
+            <h2>Ausführungsbegleitende Qualitätskontrolle für WDVS (Vollwärmeschutz)</h2>
+            <p>Es macht durchaus Sinn, die einzelnen Arbeitsschritte der ausführenden Firmen zu begutachten, um
+                gegebenenfalls vorherrschende Mängel frühzeitig zu beheben. Durch die begleitende Qualitätskontrolle
+                werden mögliche erst später auftretende Mängel auf ein Minimum reduziert.</p>
+            <p>Grundsätzlich wäre es sinnvoll, diese Kontrollen wöchentlich durchzuführen, um mögliche
+                Verarbeitungsfehler so schnell wie möglich erkennen zu können und diese umgehend zu beheben.</p>
+            <a href="Qualitaetskontrolle" class="btn btn-outline">Zur Qualitätskontrolle</a>
+        </div>
+        <div>
+            <p class="list-intro">Für eine minimale Qualitätssicherung sind folgende Termine nötig:</p>
+            <ol class="fact-list">
+                <li>Startgespräch mit den Unternehmen, die nötige Vorarbeiten für das WDVS erbringen (z.&nbsp;B.
+                    Spengler, Fensterbauer, Sonnenschutzbauer, …). Abklärung sämtlicher Berührungspunkte sowie der
+                    vorgelegten Details.
+                </li>
+                <li>Eventuelle Untergrundprüfung (Kleber, Anputzleisten, …)</li>
+                <li>Kontrolle der verwendeten Materialien sowie der Verlegung der Dämmplatten inklusive Kontrolle der
+                    Kleberkontaktfläche und der mechanischen Befestigung (Dübel).
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <p class="overline">Anfrage</p>
+        <h2>Vereinbaren Sie ein Beratungsgespräch.</h2>
+        <p>Unterer Richtstattweg 7A, 4780 Schärding · +43/699/142 450 60 · info@baumeister-bauer.at</p>
+        <a href="Kontakt" class="btn">Kontakt aufnehmen</a>
+    </div>
+</section>
+
 <style>
-    .page-header {
-        position: relative;
-        color: var(--light-text);
-        padding: 7rem 0 3rem;
-        text-align: center;
-        background-image: url('../assets/Qualitaetskontrolle_kl.jpg');
-        background-size: cover;
-        background-position: center;
-        margin-top: -1rem;
-    }
-
-    .page-header h1 {
-        position: relative;
-        font-size: 3rem;
-        font-weight: 700;
-        z-index: 1;
-        color: var(--light-text);
-    }
-
-    .header-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.8));
-        z-index: 0;
-    }
-
-    .content-section {
-        padding: 3rem 0;
-    }
-
-    .content-wrapper {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    h2 {
-        color: var(--light-text);
-        margin-bottom: 1.5rem;
-        margin-top: 2.5rem;
-    }
-
-    h2:first-child {
-        margin-top: 0;
-    }
-
-    h3 {
-        color: var(--light-text);
-        margin-bottom: 1rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-        color: var(--light-text);
-    }
-
-    ul {
-        margin-bottom: 1.5rem;
-        margin-left: 1.5rem;
-        color: var(--light-text);
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-        color: var(--light-text);
-    }
-
-    .services-grid {
+    .hero-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .hero-media :global(img) {
+        aspect-ratio: 4 / 3;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+        max-width: 30ch;
+    }
+
+    .section p {
+        color: var(--ink-soft);
+        max-width: 55ch;
+        margin-bottom: 1.1rem;
+    }
+
+    /* Beratungsgespräch steps */
+    .steps-section {
+        padding-top: 4.5rem;
+    }
+
+    .steps-section h2 {
+        margin-bottom: 2.25rem;
+    }
+
+    .step-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
-        margin: 2rem 0;
     }
 
-    .service-item {
-        background-color: var(--card-bg);
-        padding: 1.5rem;
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        border-left: 2px solid;
-        border-image: var(--accent-gradient) 1;
-        color: var(--light-text);
-    }
-
-    .info-box {
-        background-color: var(--card-bg);
+    .step-card {
+        border: 1px solid var(--line);
+        background: var(--paper-raised);
         padding: 2rem;
-        border-radius: var(--border-radius);
-        margin: 2rem 0;
-        box-shadow: var(--box-shadow);
-        border-top: 2px solid;
-        border-image: var(--accent-gradient) 1;
-        color: var(--light-text);
     }
 
+    .step-index {
+        font-family: var(--font-display);
+        font-stretch: 118%;
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: var(--oxide);
+        line-height: 1;
+        display: block;
+        margin-bottom: 1rem;
+    }
 
+    .step-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+    }
 
-    @media (max-width: 768px) {
-        .services-grid {
+    .step-card p {
+        font-size: 0.97rem;
+        margin-bottom: 0;
+    }
+
+    /* Planer & Firmen */
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 4rem;
+        padding-top: 4.5rem;
+    }
+
+    .content-grid .btn {
+        margin-top: 1rem;
+    }
+
+    .list-intro {
+        margin-top: 1.5rem;
+    }
+
+    .qk-grid .list-intro {
+        margin-top: 0;
+        margin-bottom: 1.2rem;
+    }
+
+    .topic-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border-top: 1px solid var(--line);
+        margin-bottom: 2rem;
+    }
+
+    .topic-list li {
+        font-family: var(--font-display);
+        font-size: 0.92rem;
+        font-weight: 500;
+        padding: 0.75rem 0 0.75rem 1.4rem;
+        border-bottom: 1px solid var(--line);
+        position: relative;
+    }
+
+    .topic-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.5rem;
+        height: 1px;
+        background: var(--oxide);
+    }
+
+    .drawing-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .drawing-stack figure :global(img) {
+        border: 1px solid var(--line);
+        background: #fff;
+    }
+
+    .drawing-stack figcaption {
+        font-family: var(--font-display);
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--ink-soft);
+        margin-top: 0.8rem;
+    }
+
+    @media (max-width: 980px) {
+        .step-grid {
             grid-template-columns: 1fr;
+            gap: 1.5rem;
         }
     }
 
-    @media (min-width: 992px) {
-        .content-wrapper {
-            max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
+    @media (max-width: 860px) {
+        .hero-grid,
+        .content-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        .hero-media,
+        .drawing-stack figure {
+            margin-right: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .topic-list {
+            grid-template-columns: 1fr;
         }
     }
 </style>

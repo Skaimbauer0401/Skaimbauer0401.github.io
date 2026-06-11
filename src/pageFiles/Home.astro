@@ -1,366 +1,356 @@
 ---
-import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro";
-import CardSymbolHeadlineTextLinkComponent from "../components/CardSymbolHeadlineTextLinkComponent.astro";
+import { Image } from "astro:assets";
+import gutachten from "../assets/original/gutachten2.jpg";
+import schulung from "../assets/original/Schulung.jpg";
+import qualitaet from "../assets/original/Qualitaetskontrolle_kl.jpg";
+import beratung from "../assets/original/Beratung2.jpg";
+import portrait from "../assets/original/andreas_bauer.jpg";
+
+const leistungen = [
+    {
+        titel: "Vorträge und Schulungen",
+        link: "Schulungen",
+        bild: schulung,
+        alt: "Andreas Bauer bei einem Vortrag vor Publikum",
+        text: "Vorträge für Systemhalter und Schulungen für WDVS-Firmen – von den bauphysikalischen Grundlagen bis zur normgerechten Ausführung."
+    },
+    {
+        titel: "Privat- u. Gerichtsgutachten",
+        link: "Gutachten",
+        bild: gutachten,
+        alt: "Andreas Bauer vor dem Landesgericht Ried im Innkreis",
+        text: "Privatgutachten zur Beurteilung der technischen Ausführung sowie Gerichtsgutachten im Auftrag von Richtern und Staatsanwälten."
+    },
+    {
+        titel: "Begleitende Qualitätskontrolle",
+        link: "Qualitaetskontrolle",
+        bild: qualitaet,
+        alt: "Andreas Bauer bei der Kontrolle eines Wärmedämmverbundsystems",
+        text: "Laufende Kontrolle der Ausführung auf der Baustelle – Mängel beim WDVS werden so auf ein Minimum reduziert."
+    },
+    {
+        titel: "Beratung",
+        link: "Beratung",
+        bild: beratung,
+        alt: "Andreas Bauer im Beratungsgespräch",
+        text: "Beratungsgespräche zu Ihren Anliegen sowie Unterstützung von Planern und ausführenden Firmen in der Detailplanung."
+    }
+];
 ---
-<div class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Baumeister Andreas Bauer</h1>
-            <h2>Allgemein beeideter und gerichtlich zertifizierter Sachverständiger</h2>
+
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <p class="overline">Allgemein beeideter und gerichtlich zertifizierter Sachverständiger</p>
+            <h1>Baumeister<br/>Andreas Bauer</h1>
+            <p class="lead">Auf Grund meiner jahrelangen Erfahrung biete ich Ihnen neutrale, fachliche und kompetente
+                Beratung.</p>
             <div class="hero-cta">
-                <KontaktAufnehmenButton/>
+                <a href="Kontakt" class="btn">Kontakt aufnehmen</a>
+                <a href="#leistungen" class="btn btn-outline">Leistungen</a>
             </div>
         </div>
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-fade"></div>
-</div>
-
-<section class="services">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Meine Leistungen</h2>
-            <div class="accent-line"></div>
+        <div class="hero-media framed">
+            <Image src={gutachten} alt="Baumeister Andreas Bauer vor dem Landesgericht Ried im Innkreis" class="duotone" widths={[480, 800]} sizes="(max-width: 860px) 100vw, 520px"/>
         </div>
+    </div>
+</section>
+
+<section class="cred-band">
+    <div class="container">
+        <p class="cred-heading">Experte in den Fachgremien</p>
+        <ul class="cred-grid">
+            <li>
+                <span class="cred-org">Austrian Standards</span>
+                <span class="cred-detail">AG 166.02 – Außenwand-Wärmedämmverbundsysteme</span>
+            </li>
+            <li>
+                <span class="cred-org">Austrian Standards</span>
+                <span class="cred-detail">AG 207.02 – Estriche sowie Putz- und Mauermörtel</span>
+            </li>
+            <li>
+                <span class="cred-org">ÖAP</span>
+                <span class="cred-detail">Österreichische Arbeitsgemeinschaft Putz</span>
+            </li>
+            <li>
+                <span class="cred-org">ARGE Fensterbank</span>
+                <span class="cred-detail">Experte der Arbeitsgemeinschaft</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section" id="leistungen">
+    <div class="container">
+        <p class="overline">Leistungen</p>
+        <h2 class="section-title">Vier Bereiche, ein Anspruch:<br/>neutral und fachlich fundiert.</h2>
         <div class="service-grid">
-            
-            <CardSymbolHeadlineTextLinkComponent title="Schulungen" link="Schulungen" text="Schulungen für WDVS Firmen mit Fokus auf spezifische bauphysikalische und bauchemische Vorgänge" icon="M12 3L1 8l11 5 9-4.09V17h2V8L12 3zm0 7.18L4.97 8 12 4.82 19.03 8 12 10.18zM5 12.5v3.75C5 18.55 8.58 20 12 20s7-1.45 7-3.75V12.5l-7 3.18-7-3.18z"/>
-
-            <CardSymbolHeadlineTextLinkComponent title="Gutachten" link="Gutachten" text="Gerichtlich beeideter Sachverständiger für Bauphysik, Bauschäden und mehr" icon="M3 3h18v2H3V3zm2 5h3v11H5V8zm5 3h3v8h-3v-8zm5-5h3v13h-3V6z"/>
-
-            <CardSymbolHeadlineTextLinkComponent title="Qualitätskontrolle" link="Qualitaetskontrolle" text="Begleitende Qualitätskontrolle für Bauvorhaben aller Art" icon="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
-
-            <CardSymbolHeadlineTextLinkComponent title="Beratung" link="Beratung" text="Professionelle Beratung zu allen bautechnischen Fragen" icon="M9 21h6v-1H9v1zm3-19C7.92 2 5 4.92 5 8c0 2.38 1.19 3.84 2.44 5.05.69.66 1.17 1.57 1.33 2.55h6.46c.16-.98.64-1.89 1.33-2.55C17.81 11.84 19 10.38 19 8c0-3.08-2.92-6-7-6zm0 2c2.79 0 5 2.21 5 4 0 1.6-.86 2.63-1.93 3.67-.88.85-1.52 1.92-1.82 3.13h-2.5c-.3-1.21-.94-2.28-1.82-3.13C8.86 10.63 8 9.6 8 8c0-1.79 2.21-4 4-4z"/>
-
+            {leistungen.map((l, i) => (
+                <a href={l.link} class="service-card">
+                    <div class="service-media">
+                        <Image src={l.bild} alt={l.alt} class="duotone" widths={[420, 720]} sizes="(max-width: 700px) 100vw, 520px"/>
+                    </div>
+                    <div class="service-body">
+                        <span class="service-index">{String(i + 1).padStart(2, "0")}</span>
+                        <h3>{l.titel}</h3>
+                        <p>{l.text}</p>
+                        <span class="service-more">Mehr erfahren</span>
+                    </div>
+                </a>
+            ))}
         </div>
     </div>
 </section>
 
-<section class="about">
-    <div class="container">
-        <div class="about-content">
-            <div class="about-text">
-                <div class="section-header">
-                    <h2>Über mich</h2>
-                    <div class="accent-line"></div>
-                </div>
-                <p>Als allgemein beeideter und gerichtlich zertifizierter Sachverständiger biete ich Ihnen mein
-                    umfassendes Fachwissen und langjährige Erfahrung in allen Bereichen des Bauwesens.</p>
-                <p>Ob Schulungen, Gutachten, Qualitätskontrollen oder Beratungen - ich stehe Ihnen mit meiner Expertise
-                    zur Verfügung.</p>
-                <a href="Persoenliches" class="btn-primary">Mehr über mich</a>
-            </div>
+<hr class="section-rule"/>
+
+<section class="section about">
+    <div class="container about-grid">
+        <div class="about-media framed">
+            <Image src={portrait} alt="Porträt Baumeister Andreas Bauer" class="duotone" width={420}/>
+        </div>
+        <div class="about-text">
+            <p class="overline">Persönliches</p>
+            <h2>Vom Maurerlehrling zum gerichtlich zertifizierten Sachverständigen</h2>
+            <p>Maurerlehre, Maurermeister, Bauleiter und Spartenleiter für Wärmedämmverbundsysteme, Baumeister – und
+                seit 2015 allgemein beeideter und gerichtlich zertifizierter Sachverständiger für die Herstellung von
+                Wärmedämmverbundsystemen.</p>
+            <a href="Persoenliches" class="btn btn-outline">Mein Werdegang</a>
         </div>
     </div>
-    <div class="about-bg"></div>
 </section>
 
-<section class="contact-section">
+<section class="cta-band">
     <div class="container">
-        <div class="contact-card">
-            <div class="section-header centered">
-                <h2>Kontaktieren Sie mich</h2>
-                <div class="accent-line"></div>
-            </div>
-            <p>Für Anfragen stehe ich Ihnen gerne zur Verfügung.</p>
-            <div>
-                <KontaktAufnehmenButton/>
-            </div>
-        </div>
+        <p class="overline">Kontakt</p>
+        <h2>Für Anfragen stehe ich Ihnen gerne zur Verfügung.</h2>
+        <p>Unterer Richtstattweg 7A, 4780 Schärding · +43/699/142 450 60 · info@baumeister-bauer.at</p>
+        <a href="Kontakt" class="btn">Kontakt aufnehmen</a>
     </div>
 </section>
 
 <style>
+    /* hero */
     .hero {
-        position: relative;
-        color: var(--light-text);
-        padding: 8rem 0 6rem;
-        text-align: center;
-        background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
-        background-size: cover;
-        background-position: center;
-        margin-top: -1rem;
+        padding: 5.5rem 0 5rem;
     }
 
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(18, 18, 18, 0.92), rgba(18, 18, 18, 0.6), rgba(18, 18, 18, 0.85));
-        z-index: 0;
-    }
-
-    /* Smooth fade from hero into page background */
-    .hero-fade {
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        width: 100%;
-        height: 80px;
-        background: linear-gradient(to bottom, rgba(20, 22, 24, 0), var(--primary-color));
-        z-index: 0;
-        pointer-events: none;
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 1;
-        max-width: 800px;
-        margin: 0 auto;
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 4rem;
+        align-items: center;
     }
 
     .hero h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        background: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        display: inline-block;
-    }
-
-    .hero h2 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        margin-bottom: 2rem;
-        opacity: 0.9;
+        font-size: clamp(2.1rem, 6vw, 4.2rem);
+        font-stretch: 118%;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 1.4rem 0 1.6rem;
     }
 
     .hero-cta {
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
-        justify-content: center;
-        margin-top: 2rem;
+        margin-top: 2.4rem;
     }
 
-    /* Section styles */
-    .section-header {
-        margin-bottom: 3rem;
+    .hero-media :global(img) {
+        aspect-ratio: 4 / 3;
     }
 
-    .section-header.centered {
-        text-align: center;
+    /* credential band */
+    .cred-band {
+        background: var(--anthracite);
+        color: var(--paper-deep);
+        padding: 3rem 0;
     }
 
-    .section-title {
-        font-size: 2.2rem;
+    .cred-heading {
+        font-family: var(--font-display);
+        font-size: 0.75rem;
         font-weight: 600;
-        margin-bottom: 1rem;
-        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: rgba(244, 241, 234, 0.55);
+        margin-bottom: 1.75rem;
     }
 
-    .accent-line {
-        height: 4px;
-        width: 60px;
-        background: var(--accent-gradient);
-        margin: 0.5rem auto;
-        border-radius: 2px;
+    .cred-grid {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
     }
 
-    /* Services Section */
-    .services {
-        padding: 6rem 0;
-        position: relative;
+    .cred-grid li {
+        border-left: 1px solid var(--oxide);
+        padding-left: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .cred-org {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 1rem;
+        color: var(--paper-raised);
+    }
+
+    .cred-detail {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: rgba(244, 241, 234, 0.7);
+    }
+
+    /* services */
+    .section-title {
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        margin: 1.2rem 0 3rem;
+        max-width: 26ch;
     }
 
     .service-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        padding: 0 1.5rem;
-        margin: 0 auto;
-        max-width: 1400px;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
     }
 
-    /* About Section */
-    .about {
-        padding: 6rem 0;
-        position: relative;
-        overflow: hidden;
-    }
-
-    /* sanfter Übergang vom umgebenden Seitenhintergrund in den About-Bereich */
-    .about::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 80px;
-        background: linear-gradient(to bottom, var(--primary-color), rgba(20, 22, 24, 0));
-        z-index: 0;
-        pointer-events: none;
-    }
-
-    .about-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* dezenter, neutraler Hintergrund statt bunter Fläche */
-        background: radial-gradient(1200px 500px at 80% -200px, rgba(96, 112, 134, 0.06), transparent 60%),
-        radial-gradient(800px 400px at 10% 120%, rgba(96, 112, 134, 0.04), transparent 60%);
-        z-index: -1;
-    }
-
-    .about-content {
+    .service-card {
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid var(--line);
+        background: var(--paper-raised);
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 3rem;
-        padding: 0 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
+        flex-direction: column;
+        transition: border-color 0.25s ease;
     }
 
-    .about-text {
-        flex: 1;
-        min-width: 300px;
+    .service-card:hover {
+        border-color: var(--oxide);
+    }
+
+    .service-media {
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .service-media :global(img) {
+        transition: transform 0.5s ease;
+    }
+
+    .service-card:hover .service-media :global(img) {
+        transform: scale(1.04);
+    }
+
+    .service-body {
+        padding: 1.75rem 1.75rem 2rem;
+        position: relative;
+    }
+
+    .service-index {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: var(--oxide);
+        letter-spacing: 0.08em;
+    }
+
+    .service-body h3 {
+        font-size: 1.3rem;
+        margin: 0.5rem 0 0.75rem;
+    }
+
+    .service-body p {
+        color: var(--ink-soft);
+        font-size: 0.98rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .service-more {
+        font-family: var(--font-display);
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--ink);
+        border-bottom: 2px solid var(--oxide);
+        padding-bottom: 0.2rem;
+        transition: color 0.2s ease;
+    }
+
+    .service-card:hover .service-more {
+        color: var(--oxide);
+    }
+
+    /* about */
+    .about {
+        padding-top: 5rem;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 0.55fr 1fr;
+        gap: 4.5rem;
+        align-items: center;
+    }
+
+    .about-media {
+        max-width: 340px;
     }
 
     .about-text h2 {
-        font-size: 2.2rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        color: var(--light-text);
-    }
-
-    .about-text .accent-line {
-        margin: 0.5rem 0 2rem;
+        font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+        margin: 1.2rem 0 1.2rem;
+        max-width: 22ch;
     }
 
     .about-text p {
-        margin-bottom: 1.5rem;
-        font-size: 1.05rem;
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    /* Contact Section */
-    .contact-section {
-        padding: 6rem 0;
-        position: relative;
-    }
-
-    /* Sanfter Übergang an den Kanten des Kontakt-Bereichs */
-    .contact-section::before,
-    .contact-section::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 80px;
-        pointer-events: none;
-        z-index: 0;
-    }
-
-    /* Top-Fade: von Seitenhintergrund in den Kontaktbereich */
-    .contact-section::before {
-        top: 0;
-        background: linear-gradient(to bottom, var(--primary-color), rgba(20, 22, 24, 0));
-    }
-
-    /* Bottom-Fade: aus dem Kontaktbereich wieder in den Seitenhintergrund */
-    .contact-section::after {
-        bottom: 0;
-        background: linear-gradient(to top, var(--primary-color), rgba(20, 22, 24, 0));
-    }
-
-    .contact-card {
-        background-color: var(--card-bg);
-        padding: 3rem;
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        text-align: center;
-        max-width: 700px;
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .contact-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(232, 62, 140, 0.05), rgba(40, 180, 120, 0.08), rgba(155, 48, 255, 0.05));
-        z-index: 0;
-    }
-
-    .contact-card > * {
-        position: relative;
-        z-index: 1;
-    }
-
-    .contact-section h2 {
-        margin-bottom: 1rem;
-        font-size: 2.2rem;
-        font-weight: 600;
-        color: var(--light-text);
-    }
-
-    .contact-section p {
+        color: var(--ink-soft);
+        max-width: 58ch;
         margin-bottom: 2rem;
-        font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.8);
     }
 
-    .btn-primary {
-        display: inline-block;
-        padding: 0.75rem 1.75rem;
-        text-decoration: none;
-        border-radius: 50px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        background: var(--accent-gradient);
-        color: white;
-        box-shadow: 0 4px 15px rgba(40, 180, 120, 0.3), 0 4px 15px rgba(232, 62, 140, 0.2);
+    /* responsive */
+    @media (max-width: 980px) {
+        .cred-grid {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
-    .btn-primary:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 7px 20px rgba(40, 180, 120, 0.4), 0 7px 20px rgba(232, 62, 140, 0.3);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
+    @media (max-width: 860px) {
         .hero {
-            padding: 6rem 0 4rem;
+            padding: 3.5rem 0 4rem;
         }
 
-        .hero h1 {
-            font-size: 2.2rem;
+        .hero-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
         }
 
-        .hero h2 {
-            font-size: 1.2rem;
+        .hero-media {
+            margin-right: 1rem;
         }
 
-        .hero-cta {
-            flex-direction: column;
-            gap: 1rem;
+        .about-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .service-grid {
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
         }
 
-        .section-title {
-            font-size: 1.8rem;
-        }
-
-        .services, .about, .contact-section {
-            padding: 4rem 0;
-        }
-
-        .contact-card {
-            padding: 2rem;
+        .cred-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
         }
     }
 </style>

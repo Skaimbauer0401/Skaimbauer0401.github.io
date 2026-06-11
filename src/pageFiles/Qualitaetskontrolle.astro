@@ -1,200 +1,125 @@
 ---
-import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
+import { Image } from "astro:assets";
+import qualitaet from "../assets/original/Qualitaetskontrolle_kl.jpg";
+import schichtmessung from "../assets/original/schichtstaerkenmessung_kl.jpg";
 ---
-<div class="page-header">
-    <div class="container">
-        <h1>Begleitende Qualitätskontrolle</h1>
-    </div>
-    <div class="header-overlay"></div>
-</div>
 
-<section class="content-section">
-    <div class="container">
-        <div class="content-wrapper">
-            <h2>Qualitätssicherung für Ihr Bauvorhaben</h2>
-            <p>Die begleitende Qualitätskontrolle ist ein wesentlicher Faktor für den erfolgreichen Abschluss eines
-                Bauvorhabens. Als unabhängiger Sachverständiger biete ich Ihnen eine objektive und fachkundige
-                Überprüfung während der gesamten Bauphase.</p>
-
-            <div class="benefits">
-                <h3>Ihre Vorteile</h3>
-                <ul>
-                    <li>Frühzeitiges Erkennen und Vermeiden von Baufehlern</li>
-                    <li>Sicherstellung der vertraglich vereinbarten Qualität</li>
-                    <li>Dokumentation des Baufortschritts</li>
-                    <li>Reduzierung von Baukosten durch vermiedene Mängel</li>
-                    <li>Vermeidung von Verzögerungen im Bauablauf</li>
-                    <li>Erhöhung der Rechtssicherheit</li>
-                </ul>
-            </div>
-
-            <h2>Meine Leistungen</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3>Planungsphase</h3>
-                    <ul>
-                        <li>Überprüfung der Planungsunterlagen</li>
-                        <li>Prüfung auf Übereinstimmung mit Normen und Regelwerken</li>
-                        <li>Identifikation potenzieller Schwachstellen</li>
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <h3>Bauphase</h3>
-                    <ul>
-                        <li>Regelmäßige Baustellenbegehungen</li>
-                        <li>Kontrolle der verwendeten Materialien</li>
-                        <li>Überprüfung der fachgerechten Ausführung</li>
-                        <li>Fotodokumentation</li>
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <h3>Abnahmephase</h3>
-                    <ul>
-                        <li>Unterstützung bei der Abnahme</li>
-                        <li>Erstellung von Mängelprotokollen</li>
-                        <li>Kontrolle der Mängelbehebung</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-box">
-                <h3>Zielgruppen</h3>
-                <p>Meine Dienstleistungen richten sich an:</p>
-                <ul>
-                    <li>Bauherren und Investoren</li>
-                    <li>Architekten und Planer</li>
-                    <li>Bauunternehmen und Handwerksbetriebe</li>
-                    <li>Hausverwaltungen und Immobilienbetreiber</li>
-                </ul>
-            </div>
-
-            <p>Möchten Sie mehr über meine Leistungen im Bereich der Qualitätskontrolle erfahren? Kontaktieren Sie mich.</p>
-            <KontaktAufnehmenButton />
+<section class="page-hero">
+    <div class="container hero-grid">
+        <div>
+            <p class="overline">Leistung 03</p>
+            <h1>Begleitende Qualitätskontrolle</h1>
+            <p class="lead">Es wird immer wichtiger, die Ausführung der verarbeitenden Firmen zu überprüfen und
+                gegebenenfalls auch Beanstandungen durch Verbesserungsvorschläge zu beheben.</p>
+        </div>
+        <div class="hero-media framed">
+            <Image src={qualitaet} alt="Andreas Bauer bei der Kontrolle eines Wärmedämmverbundsystems" class="duotone" width={600}/>
         </div>
     </div>
 </section>
 
+<section class="section">
+    <div class="container content-grid">
+        <div>
+            <h2>Weniger Mängel durch laufende Kontrolle</h2>
+            <p>Durch die begleitende Qualitätskontrolle werden Mängel bei der Ausführung des WDVS auf ein Minimum
+                reduziert.</p>
+            <p>Grundsätzlich wäre es sinnvoll, diese Kontrollen wöchentlich durchzuführen, um mögliche
+                Verarbeitungsfehler schnell zu erkennen.</p>
+            <figure class="side-figure framed">
+                <Image src={schichtmessung} alt="Schichtstärkenmessung am Unterputz mit Messschieber" class="duotone" width={600}/>
+                <figcaption>Schichtstärkenmessung am bewehrten Unterputz</figcaption>
+            </figure>
+        </div>
+        <div>
+            <h2>Der Ablauf der Qualitätskontrolle</h2>
+            <p class="list-intro">Für eine minimale Qualitätssicherung sind folgende Termine nötig:</p>
+            <ol class="fact-list">
+                <li>Startgespräch mit den beteiligten Unternehmen, welche Vorleistungen (z.&nbsp;B. Spengler,
+                    Fensterbauer, Sonnenschutzbauer, …) für das WDVS erbringen
+                </li>
+                <li>Kontrolle der verwendeten Materialien und Abnahme der Verlegung der Dämmplatten inklusive der
+                    Kontrolle der Kleberkontaktfläche
+                </li>
+                <li>Abnahme des bewehrten Unterputzes inklusive Schichtdickenmessungen und Kontrolle der Gewebelagen
+                </li>
+                <li>Eventuelle Abnahme des fertigen WDVS und Nachbesprechung für die nachfolgenden Gewerke</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <p class="overline">Anfrage</p>
+        <h2>Qualitätskontrolle für Ihr Bauvorhaben?</h2>
+        <p>Unterer Richtstattweg 7A, 4780 Schärding · +43/699/142 450 60 · info@baumeister-bauer.at</p>
+        <a href="Kontakt" class="btn">Kontakt aufnehmen</a>
+    </div>
+</section>
+
 <style>
-    .page-header {
-        position: relative;
-        color: var(--light-text);
-        padding: 7rem 0 3rem;
-        text-align: center;
-        background-image: url('../assets/Qualitaetskontrolle_kl.jpg');
-        background-size: cover;
-        background-position: center;
-        margin-top: -1rem;
-    }
-
-    .page-header h1 {
-        position: relative;
-        font-size: 3rem;
-        font-weight: 700;
-        z-index: 1;
-        color: var(--light-text);
-    }
-
-    .header-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.8));
-        z-index: 0;
-    }
-
-    .content-section {
-        padding: 3.5rem 0;
-    }
-
-    .content-wrapper {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    h2 {
-        color: var(--light-text);
-        margin-bottom: 1.5rem;
-        margin-top: 2.5rem;
-    }
-
-    h2:first-child {
-        margin-top: 0;
-    }
-
-    h3 {
-        color: var(--light-text);
-        margin-bottom: 1rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-        color: var(--light-text);
-    }
-
-    ul {
-        margin-bottom: 1.5rem;
-        margin-left: 1.5rem;
-        color: var(--light-text);
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-        color: var(--light-text);
-    }
-
-    .benefits {
-        background-color: var(--card-bg);
-        padding: 1.5rem;
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        border-left: 2px solid;
-        border-image: var(--accent-gradient) 1;
-        margin: 2rem 0;
-    }
-
-    .services-grid {
+    .hero-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        margin: 2rem 0;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 4rem;
+        align-items: center;
     }
 
-    .service-item {
-        background-color: var(--card-bg);
-        padding: 1.5rem;
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        border-left: 2px solid;
-        border-image: var(--accent-gradient) 1;
-        color: var(--light-text);
+    .hero-media :global(img) {
+        aspect-ratio: 4 / 3;
     }
 
-    .info-box {
-        background-color: var(--card-bg);
-        padding: 2rem;
-        border-radius: var(--border-radius);
-        margin: 2rem 0;
-        box-shadow: var(--box-shadow);
-        border-top: 2px solid;
-        border-image: var(--accent-gradient) 1;
-        color: var(--light-text);
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 4rem;
+        padding-top: 4.5rem;
     }
 
-    @media (max-width: 768px) {
-        .page-header h1 {
-            font-size: 2.2rem;
+    .content-grid h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .content-grid p {
+        color: var(--ink-soft);
+        max-width: 55ch;
+        margin-bottom: 1.1rem;
+    }
+
+    .list-intro {
+        margin-bottom: 1.2rem;
+    }
+
+    .side-figure {
+        margin-top: 2.5rem;
+        max-width: 420px;
+    }
+
+    .side-figure figcaption {
+        font-family: var(--font-display);
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--ink-soft);
+        margin-top: 0.8rem;
+    }
+
+    @media (max-width: 860px) {
+        .hero-grid,
+        .content-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
         }
-    }
 
-    @media (min-width: 992px) {
-        .content-wrapper {
-            max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
+        .hero-media {
+            margin-right: 1rem;
+        }
+
+        .side-figure {
+            margin-right: 1rem;
         }
     }
 </style>

@@ -1,153 +1,226 @@
 ---
-import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
-import TimelineDateTitleText from "../components/TimelineDateTitleText.astro"
-import CardTitleText from "../components/CardTitleText.astro";
+import { Image } from "astro:assets";
+import portrait from "../assets/original/andreas_bauer.jpg";
+import unterschrift from "../assets/original/unterschrift.gif";
+
+const werdegang = [
+    {
+        zeit: "1990–1993",
+        titel: "Maurerlehre",
+        text: "Maurerlehre bei der Firma Ferro-Betonit-Werke in Schärding (Abschluss mit Auszeichnung). Anschließende Tätigkeit als Maurervorarbeiter auf Großbaustellen in Oberösterreich und Wien."
+    },
+    {
+        zeit: "1995",
+        titel: "Weiterbildung zum Maurermeister",
+        text: "Beginn der dreijährigen berufsbegleitenden Weiterbildung zum Maurermeister an der Bauhandwerkerschule in der HTL Bau in Linz (erfolgreicher Abschluss 1998)."
+    },
+    {
+        zeit: "1996",
+        titel: "Maurerpolier und Hochbauzeichner",
+        text: "Wechsel zur Firma Bortenschlager in Ried im Innkreis (Maurerpolier). Ausbildung zum Hochbauzeichner (ArchiCAD am WIFI in Linz)."
+    },
+    {
+        zeit: "2003",
+        titel: "Bauleiter für Wärmedämmverbundsysteme",
+        text: "Firmenwechsel zur Firma Moser Fertigputz in Raab als Bauleiter für Wärmedämmverbundsysteme."
+    },
+    {
+        zeit: "Ab 2006",
+        titel: "Spartenleiter",
+        text: "Spartenleiter für Wärmedämmverbundsysteme."
+    },
+    {
+        zeit: "August 2010",
+        titel: "Baumeisterschule",
+        text: "Beginn der Baumeisterschule in Ried im Innkreis (berufsbegleitend)."
+    },
+    {
+        zeit: "März 2012",
+        titel: "Befähigungsprüfung Baumeister",
+        text: "Erfolgreicher Abschluss der Befähigungsprüfung zum Gewerbe Baumeister."
+    },
+    {
+        zeit: "August 2012",
+        titel: "Firmengründung",
+        text: "Firmengründung Architekturbüro Baumeister Andreas Bauer e.U."
+    },
+    {
+        zeit: "2013",
+        titel: "Experte der ÖAP",
+        text: "Experte in der ÖAP (Österreichische Arbeitsgemeinschaft Putz). Mitautor diverser Richtlinien: RL Sockel, RL Oberputz, RL Anputzleisten, usw."
+    },
+    {
+        zeit: "2014",
+        titel: "Austrian Standards",
+        text: "Experte von Austrian Standards (Normungsinstitut), ON-AG 166.02 Wärmedämmverbundsysteme."
+    },
+    {
+        zeit: "2015",
+        titel: "Gerichtssachverständiger",
+        text: "Allgemein beeideter und gerichtlich zertifizierter Sachverständiger für die Herstellung von Wärmedämmverbundsystemen."
+    },
+    {
+        zeit: "2016",
+        titel: "Austrian Standards",
+        text: "Experte von Austrian Standards (Normungsinstitut), ON-AG 207.02 Estriche sowie Putz- und Mauermörtel."
+    },
+    {
+        zeit: "2019",
+        titel: "ARGE Fensterbank",
+        text: "Experte der ARGE Fensterbank."
+    }
+];
 ---
-<div class="page-header">
-    <div class="container">
-        <h1>Persönliches</h1>
-    </div>
-</div>
 
-<section class="content-section">
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="profile-section">
-                <div class="profile-info">
-                    <h2>Baumeister Andreas Bauer</h2>
-                    <p class="subtitle">Allgemein beeideter und gerichtlich zertifizierter Sachverständiger</p>
-
-                    <div class="qualifications">
-                        <h3>Qualifikationen</h3>
-                        <ul>
-                            <li>Allgemein beeidetere und Gerichtlich zertifizierter Sachverständiger</li>
-                            <li>Experte von Austrian Standards</li>
-                            <li>ON-AG 166.02 Wärmedämmverbundsysteme (WDVS)</li>
-                            <li>ON-AG 207.02 Estriche sowie Putz und Mauermörtel</li>
-                            <li>Experte der ÖAP (österreichische Arbeitsgemeinschaft Putz)</li>
-                            <li>Experte der ARGE Fensterbank</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="career-section">
-                <h2>Beruflicher Werdegang</h2>
-                <div class="timeline">
-
-                    <TimelineDateTitleText date="2006 - heute" title="Wärmedämmverbundsysteme" text="Spartenleiter für Wärmedemmverbundsysteme"/>
-
-                    <TimelineDateTitleText date="März 2012" title="Baumeisterprüfung" text="Erfolgreicher Abschluss der Befähigungsprüfung zum Gewerbe Baumeister"/>
-
-                    <TimelineDateTitleText date="August 2012" title="Firmengründung" text="Gründung des Architekturbüros Baumeister Andreas Bauer e.U."/>
-
-                    <TimelineDateTitleText date="2014" title="Austrian Standards (Normungsinstitut)" text="Experte von Austrian Standards ON-AG 166.02 Wärmedämmverbundsysteme"/>
-
-                    <TimelineDateTitleText date="2015" title="Gerichtssachverständiger WDVS" text="Allgemein beeideter und gerichtlich zertifizierter Sachverständiger für die Herstellung von Wärmedämmverbundsystemen"/>
-
-                    <TimelineDateTitleText date="2016" title="Austrian Standards (Normungsinstitut)" text="Experte von Austrian Standards ON-AG 166.02 Estriche sowie Putz- und Mauermörtel"/>
-
-                    <TimelineDateTitleText date="2019" title="ARGE Fensterbank" text="Experte der ARGE Fensterbank"/>
-
-                </div>
-            </div>
-
-            <div class="expertise-section">
-                <h2>Fachliche Schwerpunkte</h2>
-                <div class="expertise-grid">
-                    <CardTitleText title="Bauphysik" text="Wärmeschutz, Feuchteschutz, Schallschutz, Brandschutz"/>
-
-                    <CardTitleText title="Wärmedämm-Verbundsysteme" text="Planung, Ausführung, Sanierung, Schadensanalyse"/>
-
-                    <CardTitleText title="Bauschäden" text="Ursachenermittlung, Sanierungskonzepte, Gutachten"/>
-
-                    <CardTitleText title="Qualitätssicherung" text="Baubegleitung, Abnahmen, Qualitätskontrollen"/>
-
-                </div>
-            </div>
-
-            <div class="contact-cta">
-                <p>Haben Sie Fragen oder möchten Sie mehr über meine Qualifikationen erfahren?</p>
-                <KontaktAufnehmenButton />
-            </div>
+<section class="page-hero">
+    <div class="container hero-grid">
+        <div>
+            <p class="overline">Persönliches</p>
+            <h1>Baumeister Andreas Bauer</h1>
+            <p class="lead">Allgemein beeideter und gerichtlich zertifizierter Sachverständiger – über 30 Jahre am Bau,
+                vom Maurerlehrling bis zum Experten in den österreichischen Normungsgremien.</p>
+        </div>
+        <div class="hero-media framed">
+            <Image src={portrait} alt="Porträt Baumeister Andreas Bauer" class="duotone" width={420}/>
         </div>
     </div>
 </section>
 
+<section class="section">
+    <div class="container">
+        <h2 class="timeline-heading">Beruflicher Werdegang</h2>
+        <ol class="timeline">
+            {werdegang.map((station) => (
+                <li>
+                    <span class="timeline-date">{station.zeit}</span>
+                    <div class="timeline-body">
+                        <h3>{station.titel}</h3>
+                        <p>{station.text}</p>
+                    </div>
+                </li>
+            ))}
+        </ol>
+    </div>
+</section>
+
+<section class="signature-band">
+    <div class="container signature-inner">
+        <Image src={unterschrift} alt="Unterschrift Andreas Bauer" width={280}/>
+        <p>Baumeister Andreas Bauer<br/><span>Allgemein beeideter und gerichtlich zertifizierter Sachverständiger</span></p>
+    </div>
+</section>
+
 <style>
-    .page-header {
-        position: relative;
-        color: var(--light-text);
-        padding: 7rem 0 3rem;
-        text-align: center;
-        background-image: url('../assets/Qualitaetskontrolle_kl.jpg');
-        background-size: cover;
-        background-position: center;
-        margin-top: -1rem;
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 4rem;
+        align-items: center;
     }
 
-    .content-section {
-        padding: 3rem 0;
+    .hero-media {
+        max-width: 300px;
+        justify-self: end;
     }
 
-    .content-wrapper {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .subtitle {
-        color: var(--light-text);
-        opacity: 0.9;
-    }
-
-    .qualifications ul {
-        margin-left: 1.5rem;
-        color: var(--light-text);
+    /* timeline */
+    .timeline-heading {
+        font-size: clamp(1.7rem, 3.5vw, 2.2rem);
+        margin: 4.5rem 0 3rem;
     }
 
     .timeline {
-        position: relative;
-        margin: 2rem 0;
-        padding-left: 1.5rem;
+        list-style: none;
+        border-left: 1px solid var(--line-strong);
+        margin-left: 0.25rem;
     }
 
-    .timeline::before {
+    .timeline li {
+        display: grid;
+        grid-template-columns: 9rem 1fr;
+        gap: 2rem;
+        padding: 0 0 2.75rem 2rem;
+        position: relative;
+    }
+
+    .timeline li::before {
         content: "";
         position: absolute;
-        left: 0.5rem;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: var(--accent-gradient);
-        opacity: 0.6;
+        left: -0.32rem;
+        top: 0.5em;
+        width: 0.6rem;
+        height: 0.6rem;
+        background: var(--paper);
+        border: 1px solid var(--oxide);
+        transform: rotate(45deg);
     }
 
-    .expertise-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1rem;
-        margin-top: 1rem;
+    .timeline li:last-child {
+        padding-bottom: 0.5rem;
     }
 
-    .expertise-item {
-        background: var(--card-bg);
-        border-radius: var(--border-radius);
-        padding: 1rem;
-        box-shadow: var(--box-shadow);
-        border-left: 2px solid;
-        border-image: var(--accent-gradient) 1;
+    .timeline-date {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 0.95rem;
+        letter-spacing: 0.04em;
+        color: var(--oxide);
+        white-space: nowrap;
     }
 
-    .contact-cta {
-        text-align: center;
-        margin-top: 2rem;
+    .timeline-body h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.4rem;
     }
 
-    @media (min-width: 992px) {
-        .content-wrapper {
-            max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
+    .timeline-body p {
+        color: var(--ink-soft);
+        max-width: 62ch;
+    }
+
+    /* signature band */
+    .signature-band {
+        background: var(--anthracite);
+        padding: 4rem 0;
+        margin-top: 5rem;
+    }
+
+    .signature-inner {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .signature-inner p {
+        font-family: var(--font-display);
+        font-weight: 700;
+        color: var(--paper-raised);
+        line-height: 1.5;
+    }
+
+    .signature-inner p span {
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: rgba(244, 241, 234, 0.65);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    @media (max-width: 860px) {
+        .hero-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        .hero-media {
+            justify-self: start;
+            margin-right: 1rem;
+        }
+
+        .timeline li {
+            grid-template-columns: 1fr;
+            gap: 0.4rem;
         }
     }
 </style>

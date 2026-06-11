@@ -1,239 +1,148 @@
 ---
 ---
-<div class="page-header">
+
+<section class="page-hero">
     <div class="container">
-        <h1>Kontakt</h1>
+        <p class="overline">Kontakt</p>
+        <h1>Nehmen Sie Kontakt auf.</h1>
+        <p class="lead">Für Anfragen zu Schulungen, Gutachten, Qualitätskontrolle und Beratung stehe ich Ihnen gerne
+            zur Verfügung.</p>
     </div>
-</div>
+</section>
 
-<section class="content-section">
-    <div class="container">
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <h2>Kontaktinformationen</h2>
-                <div class="info-item">
-                    <h3>Adresse</h3>
-                    <p>Baumeister Andreas Bauer</p>
-                    <p>Unterer Richtstattweg 7A</p>
-                    <p>4780 Schärding</p>
-                    <p>Österreich</p>
-                </div>
-
-                <div class="info-item">
-                    <h3>Telefon</h3>
-                    <p>Handy: +43/699/142 450 60</p>
-                </div>
-
-                <div class="info-item">
-                    <h3>E-Mail</h3>
-                    <p>info@baumeister-bauer.at</p>
-                </div>
-
-                <div class="info-item">
-                    <h3>Öffnungszeiten</h3>
-                    <p>Montag - Freitag: 7:00 - 17:00 Uhr</p>
-                    <p>Termine auch nach Vereinbarung möglich</p>
-                </div>
-            </div>
-
-            <div class="contact-form-container">
-                <h2>Kontaktformular</h2>
-                <p>Füllen Sie das Formular aus, und ich werde mich umgehend bei Ihnen melden.</p>
-
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">E-Mail *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Telefon</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Betreff *</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="message">Nachricht *</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="privacy" required>
-                            <span>Ich stimme zu, dass meine Angaben zur Kontaktaufnahme verwendet werden. Die Datenschutzerklärung habe ich gelesen und akzeptiert.</span>
-                        </label>
-                    </div>
-
-                    <div class="form-submit">
-                        <button type="submit" class="btn">Nachricht senden</button>
-                    </div>
-                </form>
-            </div>
+<section class="section contact-section">
+    <div class="container contact-grid">
+        <div class="contact-block">
+            <h2>Anschrift</h2>
+            <p>Baumeister Andreas Bauer<br/>
+                Unterer Richtstattweg 7A<br/>
+                4780 Schärding</p>
+            <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=Unterer+Richtstattweg+7A%2C+4780+Sch%C3%A4rding"
+               target="_blank" rel="noopener noreferrer">Auf Google Maps öffnen</a>
+        </div>
+        <div class="contact-block">
+            <h2>Telefon</h2>
+            <p><a class="contact-big" href="tel:+4369914245060">+43/699/142 450 60</a></p>
+            <h2 class="second">E-Mail</h2>
+            <p><a class="contact-big" href="mailto:info@baumeister-bauer.at">info@baumeister-bauer.at</a></p>
+        </div>
+        <div class="contact-block">
+            <h2>Unterlagen</h2>
+            <ul class="doc-list">
+                <li><a href="Honorarsaetze2025.pdf" target="_blank" rel="noopener noreferrer">Honorarsätze (PDF)</a></li>
+                <li><a href="AGB.pdf" target="_blank" rel="noopener noreferrer">Allgemeine Geschäftsbedingungen (PDF)</a></li>
+                <li><a href="Information_und_Aufklrung_FAGG.pdf" target="_blank" rel="noopener noreferrer">Information und Aufklärung gemäß FAGG (PDF)</a></li>
+                <li><a href="Muster-Widerrufsformular.pdf" target="_blank" rel="noopener noreferrer">Muster-Widerrufsformular (PDF)</a></li>
+            </ul>
         </div>
     </div>
 </section>
 
+<section class="cta-band">
+    <div class="container">
+        <p class="overline">Direkt schreiben</p>
+        <h2>Schildern Sie mir Ihr Anliegen per E-Mail.</h2>
+        <p>Ich melde mich so rasch wie möglich bei Ihnen.</p>
+        <a href="mailto:info@baumeister-bauer.at" class="btn">E-Mail verfassen</a>
+    </div>
+</section>
+
 <style>
-    .page-header {
-        background-color: var(--primary-color);
-        color: var(--light-text);
-        padding: 2rem 0;
-        text-align: center;
+    .contact-section {
+        padding-top: 4.5rem;
     }
 
-    .content-section {
-        padding: 3rem 0;
-    }
-
-    .contact-wrapper {
-        overflow: hidden;
+    .contact-grid {
         display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 3rem;
-        max-width: 1200px;
-        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.5rem;
     }
 
-    .contact-info, .contact-form-container {
-        background-color: var(--card-bg);
-        padding: 2rem;
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        color: var(--light-text);
+    .contact-block {
+        border: 1px solid var(--line);
+        background: var(--paper-raised);
+        padding: 2.25rem;
     }
 
-    .contact-info h2, .contact-form-container h2 {
-        color: var(--light-text);
+    .contact-block h2 {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--oxide);
         margin-bottom: 1rem;
     }
 
-    .info-item {
-        margin-bottom: 1.5rem;
+    .contact-block h2.second {
+        margin-top: 2rem;
     }
 
-    .info-item h3 {
-        color: var(--light-text);
-        margin-bottom: 0.5rem;
+    .contact-block p {
+        color: var(--ink-soft);
+        margin-bottom: 1.25rem;
     }
 
-    .contact-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem 1.5rem;
-    }
-
-    .form-group {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-group.full-width {
-        grid-column: 1 / -1;
-    }
-
-    label {
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-    }
-
-    input, textarea {
-        padding: 0.75rem 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 6px;
-        background: rgba(0, 0, 0, 0.2);
-        color: var(--light-text);
-    }
-
-    .checkbox-label {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .checkbox-label input {
-        margin-top: 0.25rem;
-    }
-
-    .form-submit {
-        grid-column: 1 / -1;
-        margin-top: 0.5rem;
-    }
-
-    .btn {
-        display: inline-block;
-        padding: 0.75rem 2rem;
-        background-color: var(--primary-color);
-        color: white;
+    .contact-big {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 1.15rem;
+        color: var(--ink);
         text-decoration: none;
-        border: none;
-        border-radius: 6px;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
+        border-bottom: 2px solid var(--oxide);
+        padding-bottom: 0.15rem;
+        transition: color 0.2s ease;
+        word-break: break-word;
     }
 
-    .btn:hover {
-        background-color: var(--subtle-accent);
+    .contact-big:hover {
+        color: var(--oxide);
     }
 
-    @media (max-width: 900px) {
-        /* Eine Spalte statt zwei */
-        .contact-wrapper {
+    .contact-link {
+        font-family: var(--font-display);
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--ink);
+        text-decoration: none;
+        border-bottom: 2px solid var(--oxide);
+        padding-bottom: 0.2rem;
+        transition: color 0.2s ease;
+    }
+
+    .contact-link:hover {
+        color: var(--oxide);
+    }
+
+    .doc-list {
+        list-style: none;
+    }
+
+    .doc-list li {
+        border-bottom: 1px solid var(--line);
+        padding: 0.7rem 0;
+    }
+
+    .doc-list li:first-child {
+        border-top: 1px solid var(--line);
+    }
+
+    .doc-list a {
+        color: var(--ink);
+        text-decoration: none;
+        font-size: 0.97rem;
+        transition: color 0.2s ease;
+    }
+
+    .doc-list a:hover {
+        color: var(--oxide);
+    }
+
+    @media (max-width: 980px) {
+        .contact-grid {
             grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-
-        /* Beide Boxen dieselben Innenabstände geben (links/rechts gleich) */
-        .contact-info,
-        .contact-form-container {
-            padding: 1.5rem; /* -> anpassen wenn du mehr/weniger Abstand willst */
-        }
-
-        /* Formular: eine Spalte, kein eigenes Seitenpadding (Container regelt das) */
-        .contact-form {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            padding: 0;          /* verhindert doppelten/ungleichen Innenabstand */
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .form-group,
-        .form-group.full-width {
-            grid-column: 1 / -1;
-        }
-
-        /* Inputs/Textareas füllen den zur Verfügung stehenden Raum sauber aus */
-        input, textarea {
-            width: 100%;
-            max-width: 100%;
-            box-sizing: border-box; /* wichtig, damit padding die Breite nicht 'sprengt' */
-        }
-
-        /* Checkbox & Label ordentlich ausrichten */
-        .checkbox-label {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .checkbox-label input {
-            margin: 0; /* vertikal zentriert durch align-items:center */
-        }
-
-        .form-submit {
-            grid-column: 1 / -1;
-            margin-top: 0.5rem;
-            text-align: left;
+            gap: 1.75rem;
         }
     }
-
 </style>

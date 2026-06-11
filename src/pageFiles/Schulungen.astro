@@ -1,228 +1,122 @@
 ---
-import KontaktAufnehmenButton from "../components/KontaktAufnehmenButton.astro"
+import { Image } from "astro:assets";
+import schulung from "../assets/original/Schulung.jpg";
 ---
-<div class="page-header">
-    <div class="container">
-        <h1>Schulungen</h1>
-    </div>
-    <div class="header-overlay"></div>
-</div>
 
-<section class="content-section">
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="section-header">
-                <h2>Schulungen für WDVS Firmen</h2>
-                <div class="accent-line"></div>
-            </div>
-
-            <p>Meine Schulungen bieten fundiertes Wissen mit Fokus auf:</p>
-            <ul class="feature-list">
-                <li>
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
-              <title>Check</title>
-              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
-            </svg>
-          </span>
-                    <span>Grundlagen der spezifischen bauphysikalischen und bauchemischen Vorgänge</span>
-                </li>
-                <li>
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
-              <title>Check</title>
-              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
-            </svg>
-          </span>
-                    <span>Aufbau eines WDVS und Funktion der einzelnen Komponenten</span>
-                </li>
-                <li>
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
-              <title>Check</title>
-              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
-            </svg>
-          </span>
-                    <span>Erkennen, Analysieren und Beheben von Fehlern bei der Verarbeitung</span>
-                </li>
-                <li>
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
-              <title>Check</title>
-              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
-            </svg>
-          </span>
-                    <span>Spezielle Detaillösungen mit praktischen Übungen</span>
-                </li>
-                <li>
-          <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img" focusable="false">
-              <title>Check</title>
-              <path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20.9 7.1l-1.4-1.4L9 16.2z"/>
-            </svg>
-          </span>
-                    <span>Verarbeitungsrichtlinien von Systemanbietern</span>
-                </li>
-            </ul>
-
-            <div class="info-card">
-                <div class="card-header">
-                    <h3>Zielgruppe</h3>
-                </div>
-                <div class="card-body">
-                    <p>Meine Schulungen richten sich an:</p>
-                    <ul>
-                        <li>Verarbeiter</li>
-                        <li>Bauleiter</li>
-                        <li>Projektleiter</li>
-                        <li>Sachverständige</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section-header">
-                <h2>Individuelle Schulungen</h2>
-                <div class="accent-line"></div>
-            </div>
-
-            <p>Die Schulungen werden speziell an die Bedürfnisse Ihres Unternehmens angepasst.</p>
-            <p>Kontaktieren Sie mich für ein individuelles Angebot oder weitere Informationen.</p>
-
-            <KontaktAufnehmenButton/>
+<section class="page-hero">
+    <div class="container hero-grid">
+        <div>
+            <p class="overline">Leistung 01</p>
+            <h1>Vorträge und Schulungen</h1>
+            <p class="lead">Es ist wichtig, sich immer wieder über die neuesten angewandten Regeln der Technik zu
+                informieren, um nicht durch Wissenslücken Schäden zu verursachen.</p>
+        </div>
+        <div class="hero-media framed">
+            <Image src={schulung} alt="Andreas Bauer bei einem Vortrag vor Publikum" class="duotone" widths={[480, 800]} sizes="(max-width: 860px) 100vw, 480px"/>
         </div>
     </div>
 </section>
 
+<section class="section">
+    <div class="container content-grid">
+        <div>
+            <h2>Vorträge für Systemhalter</h2>
+            <p>Ich halte Vorträge für Systemhalter (STO, Weber, …) im Bereich WDVS – insbesondere zur normkonformen
+                Planung und Ausführung sowie zur gewerkeübergreifenden Ausführung.</p>
+            <blockquote class="quote">
+                <p>„Lernen ist wie Rudern gegen den Strom. Sobald man aufhört, treibt man zurück.“</p>
+                <cite>Benjamin Britten</cite>
+            </blockquote>
+        </div>
+        <div>
+            <h2>Schulungen für WDVS-Firmen</h2>
+            <p class="list-intro">Schulungen für WDVS-Firmen mit Fokus auf:</p>
+            <ul class="fact-list">
+                <li>Grundlagen der spezifischen bauphysikalischen und bauchemischen Vorgänge</li>
+                <li>Aufbau eines WDVS und Funktion der einzelnen Systemkomponenten</li>
+                <li>Untergrundprüfung und Untergrundvorbereitung</li>
+                <li>Normgerechte Ausführung eines WDVS</li>
+                <li>Ausbildung von An- und Abschlüssen</li>
+                <li>Baupraktische Anwendung der obigen Punkte</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <p class="overline">Anfrage</p>
+        <h2>Interesse an einem Vortrag oder einer Schulung?</h2>
+        <p>Unterer Richtstattweg 7A, 4780 Schärding · +43/699/142 450 60 · info@baumeister-bauer.at</p>
+        <a href="Kontakt" class="btn">Kontakt aufnehmen</a>
+    </div>
+</section>
+
 <style>
-    .page-header {
-        position: relative;
-        color: var(--light-text);
-        padding: 7rem 0 3rem;
-        text-align: center;
-        background-image: url('../assets/Qualitaetskontrolle_kl.jpg');
-        background-size: cover;
-        background-position: center;
-        margin-top: -1rem;
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 4rem;
+        align-items: center;
     }
 
-    .header-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.8));
-        z-index: 0;
+    .hero-media :global(img) {
+        aspect-ratio: 4 / 3;
     }
 
-    .page-header h1 {
-        position: relative;
-        font-size: 3rem;
-        font-weight: 700;
-        z-index: 1;
-        color: var(--light-text);
-        display: inline-block;
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        padding-top: 4.5rem;
     }
 
-    .content-section {
-        padding: 5rem 0;
-        position: relative;
-    }
-
-    .content-section::before {
-        content: none;
-    }
-
-    .content-wrapper {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    .section-header {
-        text-align: left;
-        margin-bottom: 2rem;
-    }
-
-    .section-header h2 {
-        color: var(--light-text);
-        font-size: 2rem;
-        margin: 0;
-    }
-
-    .accent-line {
-        width: 60px;
-        height: 4px;
-        background: var(--accent-gradient);
-        border-radius: 10px;
-        margin-top: 0.75rem;
-    }
-
-    p {
-        color: var(--light-text);
-        font-size: 1.05rem;
-        line-height: 1.7;
+    .content-grid h2 {
+        font-size: 1.5rem;
         margin-bottom: 1.2rem;
     }
 
-    .feature-list {
-        list-style: none;
-        padding: 0;
-        margin: 1.5rem 0 2rem;
+    .content-grid p {
+        color: var(--ink-soft);
+        max-width: 55ch;
     }
 
-    .feature-list li {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.75rem;
-        margin-bottom: 0.75rem;
-        color: var(--light-text);
+    .list-intro {
+        margin-bottom: 1.2rem;
     }
 
-    .feature-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--light-text);
-        margin-top: 0.1rem;
-        line-height: 1;
+    .quote {
+        margin-top: 2.5rem;
+        border-left: 2px solid var(--oxide);
+        padding-left: 1.5rem;
     }
 
-    .feature-icon svg {
-        width: 1.1rem;
-        height: 1.1rem;
-        fill: currentColor;
-        display: block;
+    .quote p {
+        font-style: italic;
+        font-size: 1.15rem;
+        color: var(--ink);
+        margin-bottom: 0.5rem;
     }
 
-    .info-card {
-        background-color: var(--card-bg);
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        overflow: hidden;
-        margin: 2rem 0 2.5rem;
-        border: 1px solid rgba(255, 255, 255, 0.06);
+    .quote cite {
+        font-family: var(--font-display);
+        font-style: normal;
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--oxide);
     }
 
-    .card-header {
-        padding: 1.25rem 1.5rem;
-        background: rgba(255, 255, 255, 0.04);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
+    @media (max-width: 860px) {
+        .hero-grid,
+        .content-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
 
-    .card-header h3 {
-        color: var(--light-text);
-        margin: 0;
-    }
-
-    .card-body {
-        padding: 1.25rem 1.5rem 1.5rem 1.5rem;
-    }
-
-    @media (min-width: 992px) {
-        .content-wrapper {
-            max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
+        .hero-media {
+            margin-right: 1rem;
         }
     }
 </style>
