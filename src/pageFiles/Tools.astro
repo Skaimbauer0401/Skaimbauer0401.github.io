@@ -1,0 +1,143 @@
+---
+const tools = [
+    {
+        titel: "Planar",
+        sub: "Bildflächen-Messung",
+        text: "Flächen und Maße direkt aus einem Foto bestimmen – mit Referenzmaßstab, Polygon- und Streckenmessung sowie Export.",
+        href: "apps/testmeasure/index.html",
+        verfuegbar: true
+    }
+];
+---
+
+<section class="page-hero">
+    <div class="container">
+        <p class="overline">Werkzeuge</p>
+        <h1>Tools</h1>
+        <p class="lead">Praktische Online-Werkzeuge für die tägliche Arbeit. Direkt im Browser nutzbar – ohne
+            Installation.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="tool-grid">
+            {tools.map((tool) => (
+                <article class="tool-card">
+                    <div class="tool-card-body">
+                        <span class="tool-tag">Werkzeug</span>
+                        <h2>{tool.titel}</h2>
+                        <p class="tool-sub">{tool.sub}</p>
+                        <p class="tool-text">{tool.text}</p>
+                    </div>
+                    {tool.verfuegbar ? (
+                        <a class="btn" href={tool.href} target="_blank" rel="noopener noreferrer">Öffnen</a>
+                    ) : (
+                        <span class="btn btn-outline tool-soon" aria-disabled="true">Bald verfügbar</span>
+                    )}
+                </article>
+            ))}
+
+            <article class="tool-card tool-card-placeholder" aria-hidden="true">
+                <div class="tool-card-body">
+                    <span class="tool-tag">Demnächst</span>
+                    <h2>Weitere Tools</h2>
+                    <p class="tool-text">Hier entstehen weitere nützliche Werkzeuge.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<style>
+    .page-hero h1 {
+        margin-bottom: 1.4rem;
+    }
+
+    .tool-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .tool-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        border: 1px solid var(--line);
+        background: var(--paper-raised);
+        padding: 2rem;
+    }
+
+    .tool-card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tool-tag {
+        font-family: var(--font-display);
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--oxide);
+        margin-bottom: 1rem;
+    }
+
+    .tool-card h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .tool-sub {
+        font-family: var(--font-display);
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--ink-soft);
+        margin-bottom: 1rem;
+    }
+
+    .tool-text {
+        color: var(--ink-soft);
+        font-size: 0.97rem;
+    }
+
+    .tool-card .btn {
+        align-self: flex-start;
+    }
+
+    .tool-soon {
+        cursor: default;
+        opacity: 0.55;
+    }
+
+    /* dashed placeholder for upcoming tools */
+    .tool-card-placeholder {
+        border-style: dashed;
+        background: transparent;
+    }
+
+    .tool-card-placeholder h2,
+    .tool-card-placeholder .tool-tag {
+        color: var(--line-strong);
+    }
+
+    .tool-card-placeholder .tool-text {
+        color: var(--line-strong);
+    }
+
+    @media (max-width: 980px) {
+        .tool-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 620px) {
+        .tool-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
